@@ -1,6 +1,0 @@
-<p style="text-indent: 50px;"><%= ConcertoResourcer.getString("WELCOME_AD_1") %></p>
-<p style="text-indent: 200px;"><%= ConcertoResourcer.getString("WELCOME_AD_2") %></p>
-<p style="text-indent: 250px;"><%= ConcertoResourcer.getString("WELCOME_AD_3") %></p>
-<a href="#" onclick="open_win('http://www.parasoft.com/jsp/products/support/concerto/short_demos/intro2/Concerto.html', 900, 'left', 600, 'top', 'no', 'no', 'video'); return false;"><div></div></a>
-<p style="text-indent: 100px;"><%= ConcertoResourcer.getString("WELCOME_AD_4") %></p>
-<p style="text-indent: 300px; font-weight: bold;"><%= ConcertoResourcer.getString("WELCOME_AD_5") %></p>
