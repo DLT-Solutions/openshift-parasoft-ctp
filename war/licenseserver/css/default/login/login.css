@@ -1,0 +1,60 @@
+.login-page {	
+	background-image: url('/licenseserver/images/login/login-page.jpg');
+	background-repeat :	no-repeat;
+	background-position: left center;
+	width: 626px;
+	height: 341px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+input.loginInput {
+	border: 1px solid #EC972D;
+	padding-left: 4px;
+	font-size: 12px;	
+	color: #285172;
+	vertical-align: top;
+	margin: 3px;
+	width: 150px;
+}
+	
+body {
+    background-color: #D7D2CC;  
+}
+
+
+.label {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #285172;
+    padding-right: 4px;
+    margin: 0px;	
+}
+
+td.label {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    color: black;
+    text-align: right;
+    padding-right: 4px;
+    font-weight: bold;
+    margin: 0px;	
+}
+
+table.login {
+	margin-top: 50px;
+	background-color: #D7D2CC;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 75px;
+	padding-right: 75px;
+	width: 300px;
+}	
+
+td.copyrights {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    text-align: left;
+    padding-left: 20px;    
+}	

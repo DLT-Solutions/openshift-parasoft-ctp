@@ -1,0 +1,65 @@
+
+@media print {
+    
+    /**Fix for single page print on FF**/
+    
+    body, html { 
+       height: auto !important;
+    }	
+        
+    thead {
+        display: table-header-group;
+    }
+	
+	/** Report Center **/    
+    
+    .page-header {
+        display: none;
+    }
+    
+    .page-header-printer {
+        display: inline;
+    }       
+	
+	/** Project Center **/
+	#header, #footer, #menu, #commands, #status, #content > #pageTitle,
+	#content .contentWrapper .table-container .toolbar > .external,
+	#content .contentWrapper .table-container .toolbar > .internal,
+	#content .contentWrapper .table-container .table-filter .commands {
+	    display: none !important;
+	}   
+	
+	#page #content,
+	#content .contentWrapper,
+	#content .contentWrapper .table-container .tableWrapper {
+	     position: relative !important;
+	     overflow: visible !important;
+	     top: auto !important;
+	     bottom: auto !important;
+	     left: auto !important;
+	     right: auto !important;
+	}
+	
+	.noPrint {
+	   display: none;
+	}
+}
+
+@media screen {
+	/** Report Center **/
+    .page-header {
+
+    }
+    
+    .page-header-printer {
+        display: none;
+    }
+
+	.forPrintPreviewOnly, .forPrintPreview {
+	   display: none;
+	}
+
+	.printPreview .forPrintPreviewOnly,  .printPreview .forPrintPreview {
+	   display: block;
+	}
+}

@@ -1,0 +1,391 @@
+/**
+ *  Tabs classes
+ * 
+ */
+
+
+/* jQuery tabs END */
+
+/*Richfaces tabs START*/
+
+.tab-panel {
+    height: 100%;   
+}
+
+/*
+ * Hack
+ */
+.rich-tab-header {
+    height: 23px;
+}
+
+img.tab-image {
+    padding-top: 3px;   
+}
+
+.tab-text {
+    font: normal 10px arial, helvetica, sans-serif; 
+    vertical-align: middle;     
+}
+
+.task-anchor-bar {
+    border: 1px silver solid;  
+    background-color: #DAD5CE;
+    position: fixed;
+    top: 155px;
+    left:15px;
+    right:5px;
+}
+
+.page-anchor-bar-tab-auto-size-floating {
+    border: 1px silver solid;  
+    background-color: #DAD5CE;
+}
+
+/*Richfaces tabs END*/
+
+/* panel-grid */
+div.panel {
+    position: absolute;
+}
+
+div.panel-left {        
+    right: 51%;
+    left: 0px;
+    bottom: 0px;
+    top:0px;
+}
+
+div.panel-right {
+    right: 0;
+    left: 50%;
+    bottom: 0px;
+    top:0px;
+}
+
+div.header {
+    background-color: #DBDBCB;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+div.header > label { 
+    padding-left: 5px;
+}
+
+div.panel-header-left-collapsed {  
+    position: absolute;
+    left: 0px;
+    top:0px;
+    cursor: pointer;
+    width: 120px;
+}
+
+div.panel-header-right-collapsed {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    cursor: pointer;
+    width: 120px;
+}
+
+div.panel-body {        
+    position: absolute;
+    top: 19px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+html>/**/body .panel-body .jqAbsTab .table-content {
+    width: 100% !important;
+}
+
+.panel-body .jqAbsTab .table-content .criteria-head {
+    height: auto;
+    background-color: #D9D4CD;
+    padding: 2px;
+}
+
+.iterationsPane .panel-body {
+    overflow: auto;
+}
+
+.iterationsPane .iterationTasks {
+    margin-top: 10px;
+}
+
+.iterationsPane .iterationProps .dates .date,
+.iterationsPane .iterationProps .dates .capacityBar {
+    float: left;
+}
+
+.iterationsPane .iterationProps .dates .date > img {
+    vertical-align: middle;
+}
+
+.iterationsPane .iterationProps .dates .date > span {
+    margin-right: 5px;
+}
+
+.iterationsPane .rich-panel {
+    margin: 10px !important;
+}
+
+.capacityControl > span {
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 5px 5px 0 0;
+    white-space: nowrap;
+}
+
+.table-container .add-area {
+    position: absolute; 
+    left:0px;
+    display:none;
+    background-color: white;
+    width: 350px;
+}
+/* ~panel-grid */
+
+/* inplace-edit */
+.viewClass {
+    background-color: transparent;
+    border: 0px;
+    white-space: normal;   
+}
+
+.viewHoverClass {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.editClass {
+    vertical-align: middle;
+    text-align: left;
+}
+/* ~inplace-edit */
+
+/* editor */
+div.editorMain {
+    border: 1px solid #EC972D;  
+    vertical-align: top;
+    width: 97%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mceLayout {
+    border:0px none !important; 
+    width: 100% !important;
+    height: 53px !important;
+}
+
+.mceExternalToolbar {
+    border-color: #C4C0B9 #C4C0B9 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    display: none;
+    position: absolute;
+    left: 128px;
+}
+
+.editorContentHeight {
+    height: 350px !important;
+}
+
+.editorContentHeightShort {
+	height: 150px !important;
+}
+
+p {margin: 0; padding: 0;}
+
+
+/*.richfacesSkin iframe {
+    height: 300px !important;
+}*/
+
+/* ~editor */
+
+/* collabolators */
+.collaborators-section {
+    background-image: url('/grs/images/planning/icons/large/user.gif'); 
+    background-repeat : no-repeat;
+    background-position: left center;   
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.collaborators-table {
+    margin-left: 100px;
+}
+
+.collaborators-table-decor{
+    width: 450px;
+    border: 1px solid #EC972D;
+    margin-left: 30px;
+}
+.collaborators-button-bar-table {
+    border-bottom: 1px solid #C4C0C9;
+    width: 100%;
+    padding: 3px;
+    background-color: #F1EEE9;
+}   
+
+.collaborators-add-button {
+    margin: 2px;
+    float: left;
+}
+
+.collaborators-delete-button {
+    /*margin: 2px;*/
+    float: right;
+}
+
+.collaborators-row-item {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #C4C0C9;
+    border-right-color: white;
+    text-indent: 15px;
+}
+
+.collaborators-table-column-one {
+    width: 100%;
+    font-weight: bold;
+    border-right-color: white;
+    text-indent: 15px;
+}
+
+.collaborators-table-column-two {
+    .width: 100%;   
+    border-right-color: white;
+}
+
+.collaborators-row-selected {
+    background-color: white;
+}
+
+.collaborators-user-table {
+    border: none;
+}
+/* collabolators */
+
+/* side-panel */
+.toolbox-panel {
+    vertical-align: top; 
+    position: fixed; 
+    top: 135px; 
+    left: 2px; 
+    z-index: 100; 
+    width: 450px;
+    margin:0px;    
+}
+
+.toolbox-panel-body {
+    overflow: auto;
+}
+
+.toolbox-buttons {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.show-button {
+    position: fixed;  
+    left: 2px;
+}
+
+.tag-filter {
+    background-color: transparent;
+    border:0px none;
+}
+
+.tag-filter-selected {
+    background-color: #EFEFEF;
+    border:0px none;
+}
+
+.tag-small {
+    font-size: 11px;
+    padding: 2px;
+    margin:2px;
+    float: left;
+    white-space: nowrap;
+}
+
+.tag-medium {
+    font-size: 13px;
+    padding: 3px;
+    margin:3px;
+    float: left;
+    white-space: nowrap;
+}
+
+.tag-large {
+    font-size: 15px;
+    padding: 4px;
+    margin:4px;
+    float: left;
+    white-space: nowrap;
+}
+
+.tag-xlarge {
+    font-size: 17px;
+    padding: 5px;
+    margin:5px;
+    float: left;
+    white-space: nowrap;
+}
+
+.tag-freq {
+    font-size: 10px;
+    font-weight: normal;
+}
+/* ~side-panel */
+
+/* project selector control for requirements*/
+
+.rich-list-shuttle-button, .rich-list-shuttle-button-disabled {
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+.rich-list-shuttle-button-disabled {
+	text-align: middle;
+}
+
+.rich-shuttle-control-disabled, .rich-shuttle-control-top, .rich-shuttle-control-bottom, 
+.rich-shuttle-control-up, .rich-shuttle-control-down, .rich-shuttle-control-copyall, 
+.rich-shuttle-control-copy, .rich-shuttle-control-remove, .rich-shuttle-control-removeall {	
+	border: none !important;
+}
+
+.rich-list-shuttle-button-light {
+	border: none !important;
+	padding: none !important;
+}
+
+.rich-picklist-control-disabled {
+	border: none !important;
+}
+
+.rich-shuttle-source-row-selected, .rich-shuttle-target-row-selected {
+	background-color: #4981CE !important;
+}
+
+.rich-shuttle-source-cell-selected, .rich-shuttle-target-cell-selected, .rich-shuttle-source-cell-selected *, 
+.rich-shuttle-target-cell-selected {
+	color: white !important;
+}
+	
+/* ~ project selector control for requirements*/

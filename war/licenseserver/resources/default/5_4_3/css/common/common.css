@@ -1,0 +1,59 @@
+.clear {
+	clear: both;
+}
+
+.hiddenImp {
+	display: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.visibleImp {
+    visibility: visible !important;
+}
+
+.autowidth {
+	width: auto !important;
+}
+
+.right {
+	float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.noScroll {
+	overflow: hidden !important;
+}
+
+.textAlignLeft {
+	text-align: left !important;
+}
+
+.textAlignRight {
+    text-align: right !important;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.centeredBlock {
+    margin: auto;
+}
+
+.weak {
+	color: lightgray;
+}
+
+.noBackground {
+    background: none !important;	
+}

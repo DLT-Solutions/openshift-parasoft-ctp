@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pstsec-config>
+  <!--pstsec-db>
+    <jdbc-driver-class>org.hsqldb.jdbcDriver</jdbc-driver-class>
+    <jdbc-url>jdbc:hsqldb:file://c:\\apps\\apache-tomcat-7.0.63\\pstsec\\db\\pstsec;shutdown=true"</jdbc-url>
+    <username>sa</username> <password></password> </pstsec-db-->
+  <password-required>true</password-required>
+  <remote-authentication>
+    <enabled>true</enabled>
+    <host>parasoft-ctp-pstsec</host>
+    <port>8080</port>
+    <!--  
+    Option <protocol> indicates which scheme/protocol is used for remote authentication.
+    To set connection use 'http'. The default value is 'https'. 
+    -->
+    <protocol>http</protocol>
+
+  </remote-authentication>
+  <ldap>
+    <enabled>false</enabled>
+    <connection>
+      <url>ldap://localhost:10389/</url>
+      <bind-dn>uid=admin,ou=system</bind-dn>
+      <bind-password>secret</bind-password>
+    </connection>
+    <!--
+      This option indicates wheter only import of users should be
+      performed. If set to true then group-search-params,
+      membership-search-params, pstsec-group-definition sections are
+      skipped.
+    -->
+    <import-users-only>false</import-users-only>
+    <user-search-params>
+      <scope>OneLevel</scope>
+      <base-dn>ou=people,dc=example,dc=com
+      </base-dn>
+      <!-- {0} - user login -->
+      <filter>(&amp;(uid={0})(objectclass=person))</filter>
+      <login-attr>uid</login-attr>
+      <name-attr>cn</name-attr>
+      <surname-attr>sn</surname-attr>
+      <email-attr>mail</email-attr>
+      <pager implicitLimit="1000">
+        <alphanumeric otherChars="._@"/>
+      </pager>
+    </user-search-params>
+    <group-search-params>
+      <scope>OneLevel</scope>
+      <base-dn>ou=groups,dc=example,dc=com</base-dn>
+      <!-- {0} - group name -->
+      <filter>(&amp;(cn={0})(objectclass=groupOfNames))</filter>
+      <name-attr>cn</name-attr>
+    </group-search-params>
+    <membership-search-params>
+      <scope>OneLevel</scope>
+      <base-dn>ou=groups,dc=example,dc=com</base-dn>
+      <!-- {0} - user DN -->
+      <filter>(&amp;(member={0})(objectclass=groupOfNames))</filter>
+      <!-- {0} - user DN, replace 'All leaders' name with id of leaders group-->
+      <leader-filter>(&amp;(member={0})(cn=All leaders)(objectclass=groupOfNames))</leader-filter>
+      <name-attr>cn</name-attr>
+    </membership-search-params>
+    <pstsec-group-definition>
+      <parents>
+        <group name="GRS Basic Permissions"/>
+      </parents>
+      <children>
+        <!-- {0} is replaced with name of currently processed group -->
+        <group name="{0} Leaders" isLeaders="true">
+          <parents>
+            <group name="GRS Extended Permissions"/>
+          </parents>
+        </group>
+      </children>
+      <permissions>
+        <!-- {0} is replaced with name of currently processed group -->
+        <permission tool="grs:localhost" key="project" value="{0}"/>
+      </permissions>
+    </pstsec-group-definition>
+  </ldap>
+  
+  <!-- 
+	  This option determines if HMAC Authentication is enabled for REST services.
+	  If HMAC is enabled, then the provided secret value will be used as the private key
+	  to construct the message's digital signature. 
+	  NOTE: Using HMAC Authentication will allow access to the REST services, but it does
+	  not determine if the client is authorized to do so.
+  -->
+  <hmac enabled="true">
+  	<secret encrypted="true">74616ff45e65</secret>
+  </hmac>
+  
+  <!--
+    This option determines if a single sign on cookie will be generated.
+    To disable, comment out the 'pst-cookie' element.
+    To enable, uncomment the 'pst-cookie' element, then provide only one domain to copy the cookie to.
+      Examples:
+        <domain>companydomain.com</domain>
+        <domain>companydomain.co.uk</domain>
+        <domain>companydomain.org.jp</domain>
+  -->
+  <!-- <pst-cookie>
+    <domain>companydomain.com</domain>
+  </pst-cookie> -->
+  
+</pstsec-config>

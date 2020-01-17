@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="ls_webapp_id" version="2.4"
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>License Server</display-name>
+
+    <description>
+    Parasoft License Server
+    </description>
+    
+    
+    <error-page>
+        <error-code>403</error-code>
+        <location>/jsp/accessDeniedPage.jsp</location>
+    </error-page>
+    
+    <error-page>
+    <!-- Uncaught exception -->
+    <error-code>500</error-code>
+    <location>/jsp/errorPage_500.jsp</location>
+	</error-page>
+
+	<listener>
+	   <listener-class>com.parasoft.ls.webapps.listeners.StandaloneApplicationListener</listener-class>
+	</listener>
+    
+    <!-- COMMON SPRING SECTION BEGIN -->
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>com.parasoft.ls.webapps.spring.StandaloneAppConfig</param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+    
+    <!-- COMMON SPRING SECTION END -->
+
+    <!-- SOAP WEBSERVICES SECTION BEGIN 
+    #################################################
+    UNCOMMENT THIS SECTION IF YOU WANT TO ENABLE WEBSERVICES.
+    THE SPRING CONFIGURATION IS FOUND IN com.parasoft.ls.webapps.spring.SoapConfig
+    ALL WEB SERVICES CAN BE FOUND UNDER FOLLOWING WEB ADDRESS:
+    http://hostname:port/tcm/adminservices
+    #################################################-->
+    
+    <servlet>  
+        <servlet-name>CXFServlet</servlet-name>  
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class> 
+    </servlet>
+
+    <servlet-mapping> 
+        <servlet-name>CXFServlet</servlet-name> 
+        <url-pattern>/servlet/XFireServlet/*</url-pattern> 
+    </servlet-mapping>
+
+    <servlet-mapping> 
+        <servlet-name>CXFServlet</servlet-name> 
+        <url-pattern>/adminservices/*</url-pattern> 
+    </servlet-mapping>
+
+    <!-- SECURITY SECTION BEGIN -->
+
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <!--
+        Publish HttpSessionCreatedEvent and HttpSessionDestroyedEvent
+        to the WebApplicationContext
+    -->
+    <listener>
+        <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+    </listener>
+    
+    <!-- SECURITY SECTION END -->
+    
+    <servlet>
+        <servlet-name>startup</servlet-name>
+        <servlet-class>com.parasoft.ls.webapps.servlet.StandaloneStartupServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <session-config>
+      <session-timeout>480</session-timeout>
+      <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+
+</web-app>
+

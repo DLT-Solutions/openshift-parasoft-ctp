@@ -100,4 +100,17 @@ oc start-build parasoft-ctp-em --from-file="../war/em/em.war" --follow
 echo "New App for Parasoft CTP (Engine Manager)..."
 oc new-app parasoft-ctp-em --name=parasoft-ctp-em -e "CATALINA_OPTS_APPEND='-Xmx768m'" -e "GC_MAX_METASPACE_SIZE=256"
 
+# Deploy Parasoft SOAtest & Virtualization
+echo "New Build for Parasoft SOAtest & Virtualization..."
+oc new-build -i jboss-webserver31-tomcat8-openshift:1.2 --name=parasoft-ctp-soavirt --binary=true
+
+echo "Put soavirt.war back together...."
+cat ../war/soavirt/soavirt.war.part* > ../war/soavirt/soavirt.war
+
+echo "Start Build for Parasoft SOAtest & Virtualization..."
+oc start-build parasoft-ctp-soavirt --from-file="../war/soavirt/soavirt.war" --follow
+
+echo "New App for Parasoft SOAtest & Virtualization..."
+oc new-app parasoft-ctp-soavirt --name=parasoft-ctp-soavirt
+
 echo "Finished Deploying Parasoft CTP!!!!"

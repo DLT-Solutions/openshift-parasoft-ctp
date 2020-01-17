@@ -1,0 +1,3382 @@
+/*----------------------------------------------
+  base
+----------------------------------------------*/
+a,abbr,acronym,address,b,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100% !important;
+}
+
+body>form {
+	height: 0;
+}
+
+/*----------------------------------------------
+  page
+----------------------------------------------*/
+#page {
+	height: 100%;
+	position: relative;
+	min-width: 1090px;
+}
+
+#page.modal-window {
+	min-width: 600px;
+}
+
+#page form {
+	height: 100%;
+}
+
+/*----------------------------------------------
+  header
+----------------------------------------------*/
+#header,#header #applications,#header #applications>a {
+	height: 24px;
+}
+
+#header #applications {
+	float: left;
+	width: 550px;
+}
+
+#header #applications>a {
+	display: block;
+	width: 110px;
+	margin-left: 30px;
+	float: left;
+}
+
+#header #applications #appsMenu {
+	float: left;
+	position: relative;
+	z-index: 110;
+	margin-left: 5px;
+}
+
+#header #applications #appsMenu>a {
+	display: block;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+}
+
+#header #applications #appsMenu>a.current {
+	line-height: 24px;
+}
+
+#header #applications #appsMenu>a.arrow {
+	width: 18px;
+	margin: 2px 0 0 10px;
+	height: 18px;
+}
+
+#header #applications #appsMenu>a.arrow span {
+	display: block;
+	width: 18px;
+	height: 18px;
+}
+
+#header #applications #appsMenu>ul {
+	display: none;
+	position: absolute;
+	left: -10px;
+	top: 24px;
+}
+
+#header #applications #appsMenu>ul li {
+	display: block;
+	vertical-align: bottom;
+}
+
+#header #applications #appsMenu>ul li a {
+	display: block;
+	height: 25px;
+	width: 160px;
+	line-height: 25px;
+	white-space: nowrap;
+	padding: 0 10px 0 10px;
+}
+
+#header #headerContent {
+	float: right;
+}
+
+#header #headerContent .links {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	position: relative;
+	z-index: 101;
+}
+
+#header #headerContent .links > li {
+	display: block;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding-right: 10px;
+}
+
+#header #headerContent #savedSearches {
+	float: left;
+	position: relative;
+	z-index: 310;
+}
+
+#header #headerContent .links #savedSearches li {
+    line-height: 14px;  
+}
+
+#header #headerContent #tags>a,
+#header #headerContent #savedSearches>a {
+	display: block;
+	height: 18px;
+	width: 33px;
+	margin-top: 2px;
+}
+
+#header #headerContent #savedSearches>a>span {
+	display: block;
+	height: 18px;
+	width: 33px;
+}
+
+#header #headerContent #savedSearches>.dropDown {
+	display: none;
+	position: absolute;
+	top: 24px;
+	right: 0;
+	padding: 2px 2px 2px 2px;
+}
+
+#header #headerContent #savedSearches .savedSearches .list {
+	position: relative;
+	overflow: auto;
+	padding: 10px;
+	width: 330px;
+	height: 500px;
+}
+
+#header #headerContent #tags {
+	float: left;
+	position: relative;
+	z-index: 210;
+}
+
+#header #headerContent #tags>a>span {
+	display: block;
+	height: 18px;
+	width: 33px;
+}
+
+#header #headerContent #tags>.dropDown {
+	display: none;
+	position: absolute;
+	top: 24px;
+	right: 0;
+	padding: 2px 2px 2px 2px;
+}
+
+#header #headerContent .search {
+	float: left;
+	width: 189px;
+}
+
+#header #headerContent .search input {
+	display: block;
+	float: left;
+	height: 18px;
+	width: 154px;
+	line-height: 18px;
+	padding: 0 2px 0 2px;
+	margin: 2px 0px 0px 0px;
+}
+
+
+#header #headerContent .search a {
+	display: block;
+	float: left;
+	height: 18px;
+	width: 20px;
+	margin: 2px 0 0 0;
+}
+
+#header #headerContent .search a:hover {
+	margin-left: -1px;
+}
+
+#header #headerContent .search a img {
+	margin-top: 1px;
+	margin-left: 2px;
+}
+
+/*----------------------------------------------
+  menu
+----------------------------------------------*/
+#menu {
+	height: 31px;
+	padding: 7px 0 0 6px;
+}
+
+#menu .menu {
+	float: left;
+}
+
+#menu .defaultProject {
+	float: right;
+	padding-right: 9px;
+}
+
+#menu .defaultProject select {
+	display: block;
+	height: 22px;
+	width: 163px;
+	line-height: 18px;
+	padding: 2px 2px 2px 2px;
+	margin: 0 0 0 0;
+}
+
+/* my tasks */
+#my_tasks {
+	text-align: left;
+	padding: 10px;
+	width: 600px;
+	height: 500px;
+	overflow: auto;
+}
+
+#my_tasks .state {
+	position: relative;
+}
+
+#my_tasks .task {
+	height: 20px;
+	line-height: 20px;
+	position: relative;
+	width: 590px;
+	margin-top: 1px;
+}
+
+#my_tasks .state .info {
+	text-align: center;
+}
+
+#my_tasks .state .task-list {
+	margin-top: 3px;
+}
+
+#my_tasks div.progress,#my_tasks div.planned {
+	height: 23px;
+}
+
+#my_tasks div.id {
+	float: left;
+	width: 25px;
+	text-align: right;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+#my_tasks div.name {
+	float: left;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 550px;
+}
+
+#my_tasks div.task:hover div.name {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 440px;
+}
+
+#my_tasks div.button {
+	float: left;
+	display: none;
+	position: relative;
+	height: 15px;
+	line-height: 15px;
+	margin-top: 2px;
+	width: 100px;
+	text-align: center !important;
+	z-index: 500;
+}
+
+#my_tasks div.button .switch {
+	float: left;
+	width: 75px;
+}
+
+#my_tasks div.button .arrow {
+	width: 20px;
+	cursor: pointer;
+	float: right;
+	height: 15px;
+}
+
+#my_tasks div.task:hover div.button {
+	display: block;
+	margin-left: 5px;
+}
+
+#my_tasks div.button .arrow>ul {
+	display: none;
+	left: -1px;
+	right: -1px;
+	position: absolute;
+	top: 15px;
+	z-index: 500;
+}
+
+#my_tasks div.button .arrow>ul li {
+	height: 20px;
+	line-height: 20px;
+	width: 100px;
+	position: relative;
+	vertical-align: bottom;
+	z-index: 500;
+}
+
+#my_tasks div.button .arrow>ul li>a {
+	position: absolute !important;
+	right: 0px !important;
+	left: 0px !important;
+	height: 20px !important;
+	line-height: 20px !important;
+}
+
+#page #commands {
+	height: 22px;
+	margin: 0 2px 0 2px;
+	padding-top: 3px;
+	padding-left: 7px;
+}
+
+#page .emptyCommands {
+	display: none;
+}
+
+/*----------------------------------------------
+  status
+----------------------------------------------*/
+#page #status {
+	height: 20px;
+	padding: 2px;
+	position: relative;
+}
+
+#page #status span {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+
+#page #status>span {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+}
+
+#page #status .rich-message {
+	position: relative;
+}
+
+#page #status .rich-message-label {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	left: 42px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#page #status img {
+	margin: 2px 10px 0 16px;
+	max-height: 16px;
+}
+
+#page #status .rich-message-marker img {
+	max-width: 16px;
+}
+
+/*----------------------------------------------
+  status
+----------------------------------------------*/
+#page #content {
+	position: absolute;
+	top: 118px;
+	right: 0;
+	bottom: 20px;
+	left: 0;
+	overflow: hidden;
+}
+
+#page .contentWithoutCommands {
+	top: 93px !important;
+}
+
+.modal-window #content {
+	top: 2px !important;
+	bottom: 0 !important;
+}
+
+#page #content #pageTitle {
+	height: 20px;
+	position: relative;
+}
+
+#page #content #pageTitle>img {
+	display: block;
+	float: left;
+	margin: 2px 10px 0 10px;
+	height: 16px;
+	width: 16px;
+}
+
+#page #content #pageTitle>h1 {
+	display: block;
+	float: left;
+	line-height: 20px;
+	max-width: 920px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 10px;
+}
+
+#page #content #pageTitle>.menu-items {
+	display: block;
+	float: left;
+	margin-left: 20px;
+	height: 20px;
+}
+
+#page #content #pageTitle>a {
+	display: block;
+	float: left;
+	top: 3px;
+	right: 12px;
+	height: 14px;
+	width: 14px;
+	position: absolute;
+}
+
+#page #content>.contentWrapper {
+	position: absolute;
+	top: 22px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#page #content>.noTitle {
+	top: 0 !important;
+}
+
+#page #content>.scrollableArea {
+	overflow: auto;
+}
+
+#page #content>.newContentWrapper {
+	padding-bottom: 40px;
+}
+
+div#footer {
+	position: absolute;
+	height: 20px;
+	line-height: 20px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 15px;
+}
+
+/*----------------------------------------------
+  common
+----------------------------------------------*/
+.dropDown .toolbar {
+	width: 350px;
+	height: 20px;
+	padding: 2px 2px 0 0;
+}
+
+.dropDown .toolbar>ul {
+	display: block;
+	float: left;
+}
+
+.dropDown .toolbar>ul li {
+	display: block;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 5px 0 5px;
+	margin-left: 5px;
+}
+
+.dropDown .toolbar>a {
+	display: block;
+	float: right;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.savedSearches .list .info {
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	right: 0;
+	left: 0;
+}
+
+.savedSearches .list>ul>li,#my_tasks .state {
+	display: block;
+	padding: 2px 0;
+}
+
+.savedSearches .list>ul>li:first-child,#my_tasks .state:first-child {
+	padding-top: 0;
+}
+
+.savedSearches .list>ul>li>span,#my_tasks .state .label {
+	display: block;
+	padding: 5px;
+}
+
+.savedSearches .list>ul>li>span,#my_tasks .state .label.tooltip {
+	background-image: none;
+}
+
+.savedSearches .list>ul>li>ul {
+	display: block;
+}
+
+.savedSearches .list>ul>li>ul>li {
+	padding: 2px 5px 2px 5px;
+}
+
+.savedSearches .list>ul>li>ul>li>a {
+	padding: 0 5px 0 0;
+}
+
+.savedSearches .list>ul>li>ul>li>input {
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.savedSearches .list>ul>li>ul>li:hover>input {
+	visibility: visible;
+}
+
+.tags .cloud>div {
+	overflow: auto;
+	padding: 10px;
+	width: 330px;
+	height: 300px;
+}
+
+.tags .cloud {
+	position: relative;
+}
+
+.tags .cloud .info {
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	right: 0;
+	left: 0;
+}
+
+.tags .cloud>div>span {
+	padding: 0 5px 0 5px;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.tags .cloud>div>span>a {
+	padding: 0 5px 0 0;
+}
+
+.tags .cloud>div>span>input {
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+.tags .cloud>div>span:hover>input {
+	visibility: visible;
+}
+
+.message-error-label-small span.rich-message-label {
+	vertical-align: middle;
+	display: none;
+	position: absolute;
+	padding: 2px;
+	top: 16px;
+}
+
+.message-error-label-small:hover span.rich-message-label {
+	display: block;
+	margin: auto;
+	width: 200px;
+	margin-left: -100px;
+	z-index: 100;
+}
+
+.message-error-label-hidden span.rich-message-label {
+	display: none;
+}
+
+.noTooltipMessage:hover span.rich-message-label {
+	display: none !important;
+}
+
+.listContentWrapper {
+	padding: 0 2px 0 2px;
+}
+
+.jqTab>.listContentWrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 5px;
+}
+
+.listContentWrapper>form {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body .listContentWrapper>form {
+	position: static;
+}
+
+.table-container-wrapper {
+	height: 100%;
+}
+
+.table-container {
+	height: 100%;
+	position: relative;
+	padding: 0 !important;
+}
+
+.jqAbsTab .table-container {
+	position: absolute;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body .jqAbsTab .table-container {
+	position: relative;
+}
+
+.table-container .table-filter {
+	margin: 0 !important;
+}
+
+.inlineTable .tableWrapper {
+	position: static !important;
+}
+
+.table-container .tableWrapper {
+	position: absolute;
+	top: 62px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	/*overflow-x: hidden;*/
+	padding-right: 20px;
+}
+
+.table-wo-filter-container .tableWrapper {
+	top: 27px !important;
+}
+
+/** hack for x scroll on ie7**/
+.table-container .tableWrapper>table {
+	margin-right: -25px;
+}
+
+.table-container .tableWrapperWithPager {
+	bottom: 18px !important;
+}
+
+.table-container .tableWrapperQuickSearch {
+	top: 40px !important;
+}
+
+.table-container .tableWrapperReport {
+	top: 62px !important;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body .table-container .tableWrapper {
+	padding-right: 0;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body .table-container .tableWrapper>table {
+	margin-right: 0;
+}
+
+.table-container .toolbar {
+	height: 25px;
+	padding: 2px 0 0 0 !important;
+}
+
+.table-container .toolbar .count {
+	float: left;
+	padding: 0 10px 0 10px;
+	height: 22px;
+	line-height: 21px;
+	margin-right: 10px;
+}
+
+.table-container .toolbar .external {
+	float: left;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.table-container .toolbar .external .sortBy {
+	float: left;
+	padding: 0 0px 0 10px;
+	height: 22px;
+	line-height: 22px;
+	margin-right: 10px;
+}
+
+.table-container .toolbar .internal {
+	float: right;
+	margin-right: 4px;
+	padding-left: 10px;
+}
+
+li.workspace-menu-item {
+	width: 40px !important;
+}
+
+.table-container .table-filter {
+	padding: 2px;
+	height: auto !important;
+	text-align: left;
+	z-index: 50;
+}
+
+.table-container .table-filter>div {
+	height: 29px;
+	position: relative;
+}
+
+.details {
+	line-height: 20px;
+	height: 15px;
+	padding: 3px 28px 10px 10px;
+}
+
+.table-container .table-filter .details {
+	position: absolute;
+	top: 0;
+	right: 400px;
+	left: 0;
+	overflow: hidden;
+}
+
+.table-container .table-filter .expanded {
+	left: -1px;
+	height: auto !important;
+}
+
+.details>div>label {
+	display: inline;
+	margin-right: 5px;
+}
+
+.details>div>span {
+	display: inline;
+}
+
+.table-container .table-filter .details>div>input {
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+.details>div>span>span {
+	margin-right: 5px;
+}
+
+.table-container .table-filter .commands {
+	float: right;
+	margin: 3px 2px 0 0;
+}
+
+.table-container .table-filter .commands label {
+	display: block;
+	float: left;
+	line-height: 20px;
+	margin-right: 5px;
+}
+
+.table-container .table-filter .commands select {
+	display: block;
+	height: 22px;
+	width: 174px;
+	line-height: 18px;
+	padding: 2px 2px 2px 2px;
+	margin: 0 0 0 2px;
+	float: left;
+}
+
+.details {
+	float: left;
+}
+
+input.iconButton,a.iconButton,img.iconButton,input.toolbarButton,a.toolbarButton
+	{
+	margin: 0 0 0 2px;
+	padding: 2px;
+}
+
+img.iconButton {
+	cursor: pointer;
+}
+
+a.iconButton>img {
+	vertical-align: middle;
+}
+
+input.toolbarButton,a.toolbarButton {
+	display: block;
+	float: left;
+}
+
+a.toolbarLink {
+	display: block;
+	float: left;
+	line-height: 18px;
+}
+
+a.toolbarLink
+    {
+	margin: 0 0 0 2px;
+	padding: 2px;
+}
+
+iframe.content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.editEntity>.activity .noBottomPadding {
+	padding-bottom: 0px !important;
+}
+
+.task-bar {
+	left: 2px;
+	position: fixed;
+	right: 2px;
+	top: 150px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5px;
+}
+
+.manual-test-tab-buttons {
+	position: absolute;
+	left: 20px;
+	top: 2px;
+	z-index: 100;
+}
+
+#page #content .dockPanel {
+	position: fixed;
+	height: 33px;
+	bottom: 20px;
+	z-index: 500;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+#page #content .dockPanel>div {
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	padding: 6px 0;
+}
+
+.modal-window #content .dockPanel {
+	bottom: 0 !important;
+}
+
+.table-container .table-filter .commands .table-filter-confirm {
+	vertical-align: middle;
+	height: auto;
+	margin-top: 5px;
+	position: absolute;
+	right: 0px;
+	padding: 2px;
+}
+
+.richContent {
+	padding: 20px;
+	max-width: 600px;
+}
+
+.richContent ol>li {
+	margin-bottom: 10px;
+}
+
+.richContent ol {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+
+.iterationDelayStatus {
+	float: right;
+}
+
+.tab-sum {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 20px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+ul.ui-tabs-nav > li > div {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+	margin-right: 5px;
+	text-align: right;
+}
+
+.plan-iter-header {
+	line-height: 20px;
+}
+
+.plan-iter-header .iterName {
+	float: left;
+	left: 10px;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: absolute;
+	right: 261px;
+	white-space: nowrap;
+}
+
+.plan-iter-header .iterName {
+	margin-left: 12px;
+}
+
+.plan-iter-header .iterName>a {
+	display: block;
+	float: left;
+	overflow: hidden;
+	text-decoration: none !important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.iter-panel {
+	margin-top: 10px;
+}
+
+.iter-body {
+	padding: 0px 3px 0px 3px;
+}
+
+div.panel-header {
+	cursor: pointer;
+	width: 100%;
+	line-height: 20px;
+}
+
+div.expanded {
+	cursor: pointer;
+}
+
+.table-container .scroller {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 18px;
+}
+
+.table-container .scroller .scroller-label {
+	float: left;
+	line-height: 18px;
+}
+
+.rich-datascr {
+	text-align: left !important;
+}
+
+.table-container .scroller>.rich-datascr {
+	line-height: 18px;
+}
+
+.table-container .scroller>.rich-datascr .rich-dtascroller-table .rich-datascr-button
+	{
+	line-height: 18px;
+}
+
+.rich-toolbar td {
+	padding: 0 2px;
+	vertical-align: middle;
+}
+
+table#cr-summary {
+	margin-top: 10px;
+}
+
+table#cr-summary td {
+	padding-right: 5px;
+}
+
+.sectionTab {
+	padding: 0 0 30px 0 !important;
+	top: 33px !important;
+}
+
+.editEntity {
+	max-width: 1200px;
+}
+
+.editEntity>.activity {
+	max-width: 1200px;
+	position: absolute;
+	right: 450px;
+	left: 0;
+	padding-bottom: 35px;
+}
+
+.editEntity>.activityAutoWidth {
+	max-width: none !important;
+	right: auto !important;
+}
+
+.editEntity>.definition {
+	width: 390px;
+	position: absolute;
+	right: 20px;
+	padding-bottom: 35px;
+}
+
+.editEntity>.activity .sec {
+	margin: 0 10px 0 10px;
+	padding: 10px 10px 15px 25px;
+	position: relative;
+}
+
+.editEntity>.activity>.customFieldSec {
+	margin: 0 20px 0 20px;
+	padding: 10px 10px 15px 30px;
+	position: relative;
+}
+
+.editEntity>.activity .sec .row>label,.editEntity>.activity .sec .row>.label,.editEntity>.activity .sec .col>label,.editEntity>.activity .sec .col>.label
+	{
+	width: auto !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.editEntity>.activity .sec .row div.input {
+	min-width: 140px !important;
+}
+
+.editEntity>.activity .sec .statusRow td {
+	padding-right: 10px;
+}
+
+.editEntity>.activity .statusSec {
+	padding-bottom: 10px !important;
+}
+
+.editEntity>.activity .sec .workTimeRow>div {
+	float: left;
+}
+
+.editEntity>.activity>.sec .actualTimeRow td {
+	padding-right: 2px;
+}
+
+.editEntity>.definition>.sec {
+	padding: 15px 0 15px 10px;
+	position: relative;
+}
+
+.editEntity>.definition>.sec .row>label,.editEntity>.definition>.sec .row>.label
+	{
+	width: 100px !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.editEntity>.definition>.sec .row .input {
+	min-width: 200px !important;
+}
+
+.editEntity>.definition>.sec .row .input .inputTxt {
+	width: 160px !important;
+}
+
+.editEntity>.definition>.sec .row .input select.inputTxt {
+	width: 166px !important;
+	padding-right: 2px !important;
+}
+
+.editEntity>.definition>.sec .row .input select.largeInputTxt {
+	width: 236px !important;
+	padding-right: 2px !important;
+}
+
+.editEntity>.definition>.sec .row .input input.largeInputTxt {
+	width: 232px !important;
+}
+
+.editEntity>.definition>.sec .row .input .smallInputTxt {
+	width: 115px !important;
+}
+
+.editEntity>.definition>.sec .row .input textarea.inputTxt {
+	width: 230px !important;
+}
+
+.editEntity>.definition>.sec .testRequired {
+	display: none;
+}
+
+/*
+.editEntity > .definition > .sec .row > .input > div > span {
+    padding-right: 0 !important;
+}
+*/
+.editEntity>.definition>.sec>.secIco,.editEntity>.activity .sec>.secIco
+	{
+	left: 0px;
+	width: 16px;
+}
+
+.editEntity>.definition>.sec>.secIco,
+.editEntity>.activity .sec>.secIco,
+.editEntity>.definition>.sec>.secAction,
+.editEntity>.activity .sec>.secAction,
+.editEntity>.activity .sec>.reload,
+.editEntity>.activity .sec>.action	{
+	position: absolute;
+	top: 15px;
+	height: 16px;
+}
+
+.editEntity>.activity .sec>.reload {
+	right: 5px;
+}
+
+.editEntity>.definition>.sec>.secAction,
+.editEntity>.activity .sec>.secAction, 
+.editEntity>.activity .sec>.action {
+	right: 5px;
+	visibility: hidden;
+}
+
+.editEntity>.definition>.sec>.secAction a,.editEntity>.activity .sec>.secAction a,.editEntity>.activity .sec>.reload a
+	{
+	padding-left: 5px;
+}
+
+.editEntity>.activity .sec>.secIco {
+	top: 10px;
+}
+
+.editEntity>.activity .sec>h3,
+.editEntity>.activity .sec h4 {
+	margin-bottom: 10px;
+}
+
+.editEntity>.definition>.sec .row>.input>div>span {
+	padding-right: 2px !important;
+	padding-left: 2px !important;
+}
+
+/*
+.editEntity > .definition > .sec .iterationRow .input > div {
+	float: none !important;
+}
+*/
+.editEntity>.definition>.sec .iterationRow .noTooltipMessage {
+	display: block;
+	float: none !important;
+	clear: left !important;
+	/*float: left;*/
+}
+
+.editEntity>.definition>.sec .iterationRow .rich-message {
+	display: block;
+	float: left;
+}
+
+.editEntity>.definition>.policySec {
+	padding: 10px 0 10px 10px !important;
+}
+
+.editEntity>.definition>.tagsSec>.row>.input {
+	width: 250px;
+}
+
+.editEntity>.definition>.tagsSec>.row>.input>div>div {
+	margin-left: 0 !important;
+}
+
+.editEntity>.definition>.tagsSec>.row>.input>div>div>a {
+	margin-left: 5px;
+}
+
+.editEntity>.definition>.tagsSec .taskDescription {
+	padding: 0 !important;
+	width: 250px !important;
+	margin-bottom: 5px !important;
+}
+
+.editEntity>.definition>.tagsSec .taskDescription>span {
+	display: block;
+	float: left;
+	white-space: normal;
+	padding: 0 2px !important;
+}
+
+.editEntity>.definition>.typeSec .column .row input.inputTxt {
+	width: 115px !important;
+}
+
+.title-tip {
+	position: absolute !important;
+	min-width: 100px !important;
+	max-width: 250px !important;
+	padding: 5px !important;
+	z-index: 9999 !important;
+	margin: 0 !important;
+	line-height: normal !important;
+	text-align: left !important;
+}
+
+.task-name-tip {
+	top: 260px;
+	left: 150px;
+	max-width: none !important;
+	width: auto;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body .task-name-tip {
+	top: auto !important;
+	left: auto !important;
+}
+
+ul.comments>li {
+	padding: 10px 0 0 0;
+	margin-bottom: 10px;
+}
+
+ul.comments>li>div {
+	margin-bottom: 2px;
+}
+
+ul.comments>li>div>span,.commentsSec .taskDesc>span {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+ul.comments>li>div>span.hidden {
+	display: none !important;
+}
+
+ul.comments>li>div>a,.commentsSec .taskDesc>a {
+	display: block;
+	float: right;
+}
+
+.editEntity>.activity>.infoSec>.desc-summary {
+	float: right;
+	padding: 5px 0;
+}
+
+.editEntity>.activity>.infoSec>.desc-summary>a:first-child {
+	margin-right: 20px;
+}
+
+.editEntity>.activity>.infoSec>.taskTypeInfo {
+	float: left;
+	padding: 5px 10px;
+}
+
+.editEntity>.activity>.infoSec>.taskTypeInfo>span>a:first-child {
+	padding: 0 2px;
+}
+
+.editEntity>.activity>.workTimeSec {
+	padding-bottom: 10px !important;
+}
+
+.editEntity>.activity>.workTimeSec>a {
+	display: block;
+	margin-top: 5px;
+}
+
+.dockPanelPlaceHolder {
+	visibility: hidden;
+}
+
+.iconLink {
+	padding: 2px 10px 2px 18px;
+	line-height: 20px;
+}
+
+.qsearch {
+	margin-left: 15px;
+}
+
+.qsearch>li {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.qsearch .field>ul {
+	padding-left: 10px;
+}
+
+.qsearch-criteria {
+	height: 20px;
+	padding: 0 0 0px 20px;
+	position: absolute;
+	top: 0px;
+}
+
+.qsearch-criteria>input {
+	display: block;
+	width: 250px;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin: 2px 0 0;
+	padding: 0 2px;
+}
+
+.qsearch-criteria>a {
+	height: 20px;
+	float: left;
+	display: block;
+	margin: 2px 2px 0;
+	width: 22px;
+}
+
+div.panel-header>label {
+	padding-left: 5px;
+	float: left;
+}
+
+div.panel-header>a {
+	margin-right: 5px;
+	float: right;
+	width: 15px;
+	height: 20px;
+}
+
+.plan-iter-header .iteration-tab {
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin-left: 3px;
+}
+
+.iframe-loader {
+	position: absolute;
+}
+
+.modif,.apply,.cancel {
+	height: 10px;
+	width: 10px;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.tableWrapper>table>tbody table td {
+	overflow: hidden;
+}
+
+.projectToolSettings,.globalToolSettings {
+	padding: 10px;
+}
+
+.projectToolSettings textarea,.globalToolSettings textarea {
+	width: 100%;
+}
+
+.globalToolSettings textarea {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.projectToolSettings .label,.projectToolSettings .hint,.globalToolSettings .label,.globalToolSettings .hint
+	{
+	float: left;
+}
+
+.projectToolSettings .hint img,.globalToolSettings  .hint img {
+	cursor: pointer;
+}
+
+.settingsHint .example {
+	margin: 5px;
+	padding: 2px;
+}
+
+.settingsHint .example .comment {
+	margin-top: 5px;
+}
+
+.cfProjSettings {
+	padding-right: 20px;
+}
+
+h1.reqStatusHeader {
+	display: block;
+	padding: 50px 0px 0px 0px;
+}
+
+#container h2.subTitle,
+.report h2.subTitle {
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#container h2.withToolTip,
+.report h2.withToolTip {
+	float: left;
+	padding-right: 10px;
+}
+
+.report .limitReachedMessage {
+	margin-bottom: 10px;
+}
+
+span.whiteSpace {
+	padding: 20px;
+}
+
+tr.reqTestStatus {
+	float: center;
+	height: 22px;
+}
+
+.defectDescriptionStyle {
+	margin-bottom: 13px;
+}
+
+.modifHistoryGroupCell {
+	padding: 5px;
+}
+
+.modifHistoryCell {
+	text-align: right;
+	vertical-align: middle;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.esignatureInputTxt {
+	border: 1px solid #8DB3D4 !important;
+	padding-left: 4px;
+	font-size: 12px;
+	color: #285172;
+	vertical-align: top;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 15px;
+	width: 200px;
+}
+
+.projectCombo {
+	width: 180px !important;
+}
+
+.comboDouble {
+	width: 360px !important;
+}
+
+.importNote {
+	padding: 10px;
+	width: 97%;
+}
+
+.importExample {
+	padding: 10px;
+	width: 97%;
+}
+
+.pInline {
+	display: inline;
+}
+
+.pInlineMonospace {
+	display: inline;
+}
+
+/*----------------------------------------------
+  grid
+----------------------------------------------*/
+table.grid {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+/*.scrTable .scrTableBody table.grid {*/
+.scrollableDataGrid>tbody table.grid {
+	/*table-layout: auto !important;*/
+	margin-top: 0 !important;
+	
+}
+
+.table-container .tableWrapperWithScroller {
+	margin-bottom: 18px !important;
+}
+
+/*.scrTable .scrTableHeader table.grid {*/
+.scrollableDataGrid>thead table.grid {
+	height: auto !important;
+}
+
+table.grid > thead > tr > th,
+table.grid > tfoot > tr > td,
+table.grid > tbody > tr > td {
+	padding: 2px 10px 2px 10px;
+	/*white-space: nowrap;*/
+	overflow: hidden;
+}
+
+table.noWrap > thead > tr > th,
+table.noWrap > tfoot > tr > td,
+table.noWrap > tbody > tr > td {
+	white-space: nowrap;
+}
+
+table.grid > tbody > tr > td.noWrap,
+table.grid > thead > tr > th.noWrap {
+	white-space: nowrap;
+}
+
+table.grid>thead>tr>th,
+	/*.scrTable .scrTableHeader table.grid > tbody > tr > td {*/
+.scrollableDataGrid > thead table.grid > tbody > tr > td,
+.scrollableDataGrid table.grid > thead > tr > th {
+	text-align: center;
+	vertical-align: middle;
+	height: 18px;
+}
+
+table.inlineGrid>thead>tr>th {
+	min-width: 0;
+}
+
+.scrollableDataGrid > thead table.grid > tbody > tr > td > .sortingHeader,
+.scrollableDataGrid table.grid > thead > tr > th > .sortingHeader {
+	display: inline;
+	cursor: pointer;
+}
+
+.scrollableDataGrid>thead table.grid>tbody>tr>td>.sortingHeader>.table-header-sorting,
+.scrollableDataGrid table.grid > thead > tr > th > .sortingHeader > .table-header-sorting {
+	display: none;
+}
+
+table.grid > thead > tr > th.blank, 
+table.grid > tbody > tr > td.blank, 
+table.grid > tfoot > tr > td.blank {
+	width: 20px !important;
+}
+
+table.grid > tfoot > tr > td,
+table.grid > tbody > tr > td {
+	text-align: left;
+	vertical-align: top;
+}
+
+table.grid>tfoot>tr>td.num,
+table.grid>tbody>tr>td.num,
+table.grid>tfoot>tr>td.dur,
+table.grid > tbody > tr > td.dur {
+	text-align: right;
+}
+
+table.grid>thead>tr>th.sel,
+table.grid>tbody>tr>td.sel,
+.scrollableDataGrid>thead table.grid>tbody>tr>td.sel,
+.scrollableDataGrid table.grid > thead > tr > th.sel {
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+}
+
+table.grid>tbody>tr>td.sel>input {
+	padding: 3px 0 2px 0 !important;
+}
+
+table.grid>thead>tr>th.action,
+table.grid>tbody>tr>td.action,
+.scrollableDataGrid>thead table.grid>tbody>tr>td.action,
+.scrollableDataGrid table.grid > thead > tr > th.action {
+	padding: 2px 5px 2px 5px;
+}
+
+/* ie7 hack (only modern browsers understand statement below) */
+html> /**/ body table.grid>tbody>tr>td.progressBar,
+html> /**/ body table.grid > tfoot > tr > td.progressBar {
+	padding: 1px !important;
+}
+
+table.grid>thead>tr>th.mline,
+table.grid>tbody>tr>td.mline,
+table.grid > tfoot > tr > td.mline {
+	white-space: normal;
+}
+
+table.grid > thead > tr > th.sline,
+table.grid > tbody > tr > td.sline,
+table.grid > tfoot > tr > td.sline {
+	white-space: nowrap;
+}
+
+/*
+table.grid > tbody > tr > td.progressBar > img,
+table.grid > tfoot > tr > td.progressBar > img {
+	height: 19px;
+}
+*/
+table.grid>tbody>tr>td.progressBar>div,
+table.grid > tfoot > tr > td.progressBar > div {
+	width: 100%;
+	height: 19px;
+	position: relative;
+}
+
+table.grid>tbody>tr>td.progressBar>div>span,
+table.grid > tfoot > tr > td.progressBar > div > span {
+	display: block;
+	height: 17px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+table.grid>tbody>tr>td.progressBar>div>div,
+table.grid > tfoot > tr > td.progressBar > div > div {
+	height: 19px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Demo */
+table.grid>tbody>tr>td.relation span,
+table.grid>tbody>tr>td.relation a {
+	margin-right: 5px;
+	/*line-height: 16px;*/
+}
+
+table.grid>tbody>tr>td.tags a {
+	margin-right: 5px;
+}
+
+/*table.grid > tbody > tr > td,
+table.grid > tbody > tr > td > * {
+    line-height: 19px;
+}*/
+table.grid>tbody>tr>td>input[type="text"] {
+	width: 100% !important;
+	/*height: 100% !important;*/
+	/*height: 16px !important;*/
+	/*line-height: 16px !important;*/
+	padding: 1px !important;
+}
+
+table.grid>tbody>tr>td>select {
+	width: 100% !important;
+	/*height: 100% !important;*/
+	/*height: 16px !important;*/
+	line-height: 16px !important;
+	padding: 0 !important;
+}
+
+/* ~Demo */
+table.treeGrid>tbody>tr>td.treeColumn,
+table.treeGrid > tfoot > tr > td.treeColumn {
+	padding-left: 25px;
+}
+
+table.treeGrid>tbody>tr>td.treeColumn .expander {
+	padding-right: 0 !important;
+	display: inline;
+}
+
+table.treeGrid>tbody>tr.inplaceEdit>td.treeColumn .expander {
+	display: none;
+}
+
+table.treeGrid>tbody>tr.inplaceEdit td.treeColumn {
+	padding-left: 10px !important;
+}
+
+/**/
+table.reqCRGrid td.first img {
+	margin-right: 5px;
+}
+
+table.reqCRGrid td.name img {
+	margin-right: 5px;
+}
+
+table.reqCRGrid td.name {
+	/*position: relative;*/
+	padding-right: 60px;
+}
+
+.crDetailsGrid>tbody>tr>td {
+	/*padding-right: 0 !important;*/
+	white-space: nowrap;
+}
+
+.crDetailsGrid>tbody>tr>td.element {
+	white-space: normal;
+}
+
+.crDetailsGrid>tbody>tr>td.entity>img,
+.crDetailsGrid>tbody>tr>td.source>img,
+.crDetailsGrid>tbody>tr>td.file>img,
+.crDetailsGrid>tbody>tr>td.revision>img,
+.crDetailsGrid>tbody>tr>td.OWNER>img,
+.crDetailsGrid>tbody>tr>td.REVIEWER>img,
+.crDetailsGrid > tbody > tr > td.thread > img.ico {
+	margin-right: 5px;
+}
+
+.crDetailsGrid>tbody>tr>td.source a,
+.crDetailsGrid > tbody > tr > td.revision a {
+	margin-left: 5px;
+}
+
+.crDetailsGrid>tbody>tr>td.entity a {
+	margin-right: 5px;
+}
+
+.crDetailsGrid>tbody>tr>td.thread>* {
+	float: left;
+}
+
+.crDetailsGrid>tbody>tr>td.thread .actors {
+	margin-left: 10px;
+	float: right;
+}
+
+.crDetailsGrid>tbody>tr>td>.actors img {
+	margin-left: 5px;
+}
+
+.crDetailsGrid>tbody>tr>td.thread .actors>span {
+	margin-left: 0;
+}
+
+.crDetailsGrid>tbody>tr>td.thread .actors img {
+	margin-right: 0;
+}
+
+.crDetailsGrid>tbody>tr>td.element {
+	padding-top: 0;
+}
+
+.crDetailsGrid>tbody>tr>td.element>div {
+	/*border-top: solid 1px #e6e6e6;*/
+	padding: 2px 10px 2px 0;
+	margin-right: -10px;
+	/*background: #fdfdcb;*/
+}
+
+.crDetailsGrid>tbody>tr>td.element>div>.what,
+.crDetailsGrid > tbody > tr > td.element > div > .who {
+	float: left;
+}
+
+.crDetailsGrid>tbody>tr>td.element>div>.when {
+	float: right;
+}
+
+.crDetailsGrid>tbody>tr>td.element>span {
+	padding-left: 10px;
+}
+
+.crDetailsGrid>tbody>tr>td.element>p {
+	padding: 2px 0 2px 10px;
+	margin-bottom: 5px;
+}
+
+ul.crDetailsSummary {
+	margin-left: 5px;
+	list-style: none;
+}
+
+.crStatusInfo {
+	margin-left: 5px;
+}
+
+.crStatusInfo>span {
+	margin-left: 5px;
+}
+
+.crStatusInfo>span>img {
+	margin-right: 0;
+}
+
+.crDetailsGrid>tbody>tr>td>.crStatistics {
+	margin-left: 5px;
+}
+
+.conflictReq>thead>tr>th.last {
+	background-color: #ffffff;
+	border: none;
+}
+
+#importForm .section {
+	width: 800px;
+	padding: 0px 20px;
+}
+
+#importForm .section .secBody {
+	padding-bottom: 40px;
+	margin-left: 20px;
+}
+
+#importForm .actionPanel {
+	padding: 10px;
+	margin-right: 41px;
+	border: 1px solid #c9c9c9;
+}
+
+#importForm .secBody .importComparePanel {
+	padding: 30px 0 30px 0;
+}
+
+#importForm .secBody .importComparePanel>div {
+	padding-bottom: 10px;
+}
+
+#importForm .secBody .importComparePanel>div>div.left>div {
+	width: 600px !important;
+}
+
+.workspace {
+	left: 10px;
+	right: 10px;
+	bottom: 5px;
+	top: 5px;
+	position: absolute;
+}
+
+.workspace>.toolbar {
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.workspace-column {
+	width: 50%;
+	float: left;
+	min-width: 300px;
+}
+
+.widget {
+	margin: 0 5px 5px 0;
+	height: 100%;
+	min-height: 300px;
+	position: relative;
+}
+
+.widget-header {
+	padding-bottom: 4px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.widget-header-label {
+	float: left;
+	padding-left: 5px;
+}
+
+.widget-header-action {
+	float: right;
+	padding-right: 5px;
+}
+
+.widget-def {
+	padding: 0.4em;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
+
+.widget-def .widget-def-buttons {
+	float: right;
+}
+
+.widget-content {
+	overflow: auto;
+	padding: 0.4em;
+	max-height: 400px;
+}
+
+.widget-content .report {
+	height: 310px;
+	position: relative;
+}
+
+#controls {
+	width: 100%;
+	position: relative;
+	height: 20px;
+}
+
+#controls .layout {
+	position: absolute;
+	right: 110px;
+	bottom: 2px;
+	width: 300px;
+}
+
+#controls .size {
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+	width: 100px;
+}
+
+.sortable {
+	list-style-type: none;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.sortable li {
+	margin: 4px;
+	float: left;
+}
+
+.sortable li .widget {
+	margin: 0px;
+}
+
+.s li {
+	width: 19%;
+	height: 200px;
+}
+
+.s li .widget-content,.s .ui-sortable-placeholder {
+	height: 166px;
+}
+
+.l li {
+	width: 49%;
+	height: 400px;
+}
+
+.l li .widget-content,.l .ui-sortable-placeholder {
+	height: 366px;
+}
+
+.m li {
+	width: 32%;
+	height: 300px;
+}
+
+.m li .widget-content,.m .ui-sortable-placeholder {
+	height: 266px;
+}
+
+.sortable .ui-sortable-placeholder {
+	border: 1px dotted black;
+	visibility: visible !important;
+}
+
+.sortable .ui-sortable-placeholder * {
+	visibility: hidden;
+}
+
+.sortable li .widget-content .report {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: auto !important;
+}
+
+form.autoheight {
+	height: auto !important;
+}
+
+.sortable li .widget {
+	min-height: 0 !important;
+}
+
+.widget-content .report iframe.content {
+	top: 0;
+}
+
+.widgetTable .tableWrapper {
+	top: 0 !important;
+	position: relative !important;
+	overflow: visible !important;
+}
+
+.widgetTable .toolbar {
+	
+}
+
+.widgets .widget-small {
+	float: left;
+	width: 30px;
+	height: 20px;
+	min-height: 20px;
+	margin: 0 2px 2px 0;
+}
+
+.widgets .widget-small:HOVER {
+	cursor: pointer;
+}
+
+.widgets .widget-small-header {
+	line-height: 2px !important;
+	height: 2px !important;
+}
+
+.widgets {
+	width: 66px;
+	position: absolute;
+	right: 5px;
+	top: 25px;
+}
+
+.tableExample td {
+	border-style: solid;
+	border-width: 1px;
+	width: 130px;
+	height: 12px;
+	border-collapse: collapse;
+	padding-left: 5px;
+}
+
+.tableExample tr:first-child {
+	font-weight: bold;
+}
+
+.xreportWarningImg {
+	float: left;
+	margin: 2px;
+}
+
+.xreportWarningMessage {
+	height: 20px;
+	line-height: 2;
+}
+
+.bugStatusRepSummary {
+	margin-top: 20px;
+}
+
+.bugStatusRepSummary>img:first-child {
+	margin-right: 20px;
+}
+
+.bugStatusRepSummary>table {
+	margin-top: 20px;
+}
+
+table.tasksActivityDetails caption {
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+table.tasksActivityDetails caption img {
+	margin-right: 5px;
+}
+
+.report .chartWrapper {
+	margin: 20px 0 20px 0;
+}
+
+td.pcProjectPanel table.dateRange>tbody>tr>td {
+	padding: 0 1px 0 1px;
+}
+
+.welcome {
+	min-width: auto !important;
+}
+
+.welcome #header {
+	/*display: none;*/
+	
+}
+
+.welcome #content {
+	top: 24px !important;
+	/*top: 0 !important;*/
+	overflow: auto !important;
+}
+
+.welcome #content>div {
+	margin: auto;
+	width: 1005px;
+	margin-top: 80px;
+}
+
+.welcome #content .contentFrame {
+	padding: 2px;
+	margin-top: 30px;
+}
+
+.welcome #content .contentFrame>div {
+	padding: 16px;
+}
+
+.welcome #content .single .contentFrame>div {
+	padding: 32px 32px 20px 32px;
+}
+
+.welcome #content .contentFrameContent>div {
+	padding: 15px 1.4em 20px 1.4em;
+}
+
+.welcome #content .single .contentFrameContent>div {
+	padding: 15px 20px 20px 20px;
+}
+
+.welcome #content .contentFrameContent>label {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 40px;
+}
+
+.welcome #content .single .contentFrameContent>label {
+	padding-left: 50px;
+	line-height: 70px;
+}
+
+.welcome #content .forms {
+	float: left;
+}
+
+.welcome #content .full>.forms {
+	width: 360px;
+}
+
+.welcome #content .single>.forms {
+	max-width: 452px;
+	float: none;
+	margin: auto;
+}
+
+.welcome #content .message {
+	max-width: 280px;
+}
+
+.welcome #content .forms .logo {
+	width: 244px;
+	height: 86px;
+}
+
+.welcome #content .ad {
+	float: right;
+}
+
+.welcome #content .ad>p {
+	line-height: 25px;
+}
+
+.welcome #content .ad div {
+	height: 400px;
+	width: 638px;
+	margin-top: 38px;
+}
+
+.welcome #content .login .row {
+	margin-bottom: 10px;
+}
+
+.welcome #content .row .label {
+	float: left;
+	text-align: left;
+	width: 100px;
+}
+
+.welcome #content .single .row .label {
+	width: 180px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	margin-left: 4px;
+}
+
+.welcome #content .row .input {
+	float: left;
+	padding-left: 0px;
+}
+
+.welcome #content .required {
+	margin-left: 2px;
+	float: left;
+}
+
+.welcome #content .row .input input[type=text],
+.welcome #content .row .input input[type=password] {
+	height: 20px;
+	width: 145px;
+	padding-left: 5px;
+}
+
+.welcome #content .single .row .input input[type=text],
+.welcome #content .single .input input[type=password] {
+	width: 330px;
+	margin-left: 4px;
+}
+
+.welcome #content .row .button {
+	float: right;
+	margin-top: 2px !important;
+	margin-bottom: 7px !important;
+	background: #096FA8;
+	border: none !important;
+	width: 150px;
+	height: 40px;
+	color: white !important;
+    font-size: 15px !important;
+}
+
+.welcome #content .row .link {
+	padding-top: 15px !important;
+    width: 160px;
+    float: left;
+}
+
+.welcome #content #login .row .button {
+	margin-top: 0 !important;
+}
+
+.welcome #content #validationMsg {
+	margin-bottom: 20px;
+}
+
+.welcome #content .tabs {
+	padding: 2px;
+}
+
+.welcome #content .tabs .tabcontent {
+	border-width: 0 1px 1px 1px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+/*
+.welcome #content .tabs #login {
+    width: 282px;
+}
+*/
+
+/**/
+.welcome #content .tabs #login,
+.welcome #content .tabs #register {
+	width: 283px;
+}
+/**/
+.welcome #content .message {
+	margin-bottom: 10px;
+}
+
+.welcome #content .validationMsg {
+	margin-left: 110px;
+}
+
+.welcome #content .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+	cursor: default !important;
+}
+
+.welcome #content .tabs .logintab,
+.welcome #content .tabs .regtab {
+	width: 150px;
+}
+
+.welcome #content .tabs .regtab {
+	margin-right: 0px;
+}
+
+.welcome #content .tabs .logintab {
+	margin-right: 11px;
+	/*margin-right: 1.0em;*/
+}
+
+.welcome #content .tabs .regtab>a {
+	padding-left: 30px;
+}
+
+.welcome #content .tabs .logintab>a {
+	padding-left: 30px;
+}
+
+.welcome #content .tabs>ul {
+	padding: 0px !important;
+}
+
+.welcome #content .tabs li {
+	height: 30px;
+}
+
+.welcome #content .tabs .ui-tabs-nav>li>a {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	line-height: 30px;
+	padding-top: 0;
+}
+
+.welcome .confirmRegistrationContent,
+.welcome .confirmInvitationContent {
+	height: 180px;
+}
+
+.welcome #content .confirmRegistrationContent .progress,
+.welcome #content .confirmInvitationContent .progress {
+	height: 40px;
+}
+
+.welcome .confirmRegistrationContent .right,
+.welcome .confirmInvitationContent .right {
+	margin-top: 10px;
+}
+
+.welcome .preload {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+}
+
+.dropDownMenu {
+	position: relative;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+.dropDownMenu>a {
+	height: 18px;
+	line-height: 18px;
+}
+
+.dropDownMenu>div {
+	padding: 2px;
+}
+
+.dropDownMenu>div {
+	right: 0;
+}
+
+.dropDownMenu>div.left {
+	left: 0;
+	right: auto;
+}
+
+.dropDownMenu>div {
+	display: none;
+	position: absolute;
+	z-index: 101;
+	margin-top: -5px;
+	list-style: none;
+}
+
+#invite ul li {
+	width: 250px;
+}
+
+#invite ul {
+	padding: 20px 20px 30px 20px;
+}
+
+#invite ul li div input[type='text'] {
+	height: 18px;
+	width: 247px;
+}
+
+#invite ul li div select {
+	width: 249px;
+}
+
+#invite ul li div.invite-button {
+	margin-top: 10px;
+}
+
+#header #headerContent .links>li.separator-right {
+	margin-right: 10px;
+}
+
+#invite ul li div.invite-button input.button {
+	float: right;
+}
+
+.dropDownMenu>a {
+	display: block;
+}
+
+.dropDownMenu ul {
+	list-style: none;
+}
+
+.dropDownMenu ul li a {
+	display: block;
+	height: 25px;
+	width: 110px;
+	line-height: 25px;
+	white-space: nowrap;
+	padding: 0 10px 0 10px;
+}
+
+#help .dropDown ul li a {
+	width: 140px;
+}
+
+.dropDownMenu>a {
+	padding-left: 10px;
+}
+
+.dropDownMenu>a span {
+	margin-right: 3px;
+	padding-left: 10px;
+}
+
+.dropDownMenu>a.active {
+	z-index: 102;
+	position: relative;
+}
+
+.links .dropDownMenu .dropDown {
+	top: 24px;
+}
+
+#userMenu .dropDown {
+	top: 24px;
+	width: 200px;
+}
+
+#wizardContent .step2Content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#wizardContent .step2Content .step2ContentLeft,
+#wizardContent .step2Content .step2ContentRight {
+	float: left;
+	width: 49%;
+	height: 100%;
+}
+
+#wizardContent .step2Content .step2ContentRight {
+	margin-left: 15px;
+}
+
+.selectMember a {
+	line-height: 18px;
+	height: 18px;
+}
+
+.selectMember {
+	float: left;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+
+.markerColumn {
+	padding: 2px;
+	vertical-align: middle;
+	text-align: center;
+	width: 10px;
+}
+
+div.section {
+	padding-bottom: 20px;
+}
+
+div.section>div {
+	padding: 10px;
+}
+
+div.section>label {
+	display: block;
+	line-height: 32px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+div.man-test-section-new>label,
+div.e-sig-section-new>label,
+div.general-section-new>label,
+div.book-section-new>label,
+div.effort-section-new>label,
+div.relationship-section-new>label,
+div.detail-section-new>label,
+div.attachment-section-new>label,
+div.comment-section-new>label,
+div.activity-section-new>label,
+div.worktime-section-new>label,
+div.history-section-new>label,
+div.modification-history-section-new > label {
+	padding-left: 35px !important;
+}
+
+div.section>label.withHelp {
+	float: left;
+}
+
+div.section>a.help {
+	display: block;
+	float: left;
+	line-height: 32px;
+	margin-left: 5px;
+}
+
+div.section>label.tooltip {
+	cursor: help;
+	padding-right: 10px;
+	display: inline;
+}
+
+.attachment-section-new .margin-top-attach>span>.info {
+	float: left;
+	line-height: 17px;
+	margin-right: 10px;
+}
+
+.projectGeneralTab {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.projectGeneralTabRight,
+.projectGeneralTabLeft {
+	float: left;
+	height: 100%;
+}
+
+.projectGeneralTabLeft {
+	width: 500px;
+}
+
+.projectGeneralTabRight {
+	margin-left: 20px;
+}
+
+.jqTabs {
+	overflow: hidden;
+}
+
+.jqTabs {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.jqTab {
+	overflow: auto;
+	width: auto;
+}
+
+.jqTabs .jqTab {
+	position: absolute;
+	top: 45px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.jqAbsTabs {
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.jqAbsTab {
+	overflow: auto;
+	width: auto;
+	position: absolute;
+	top: 45px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0px !important;
+}
+
+.jqTabLabel {
+	float: left;
+	margin-right: 5px;
+}
+
+.jqTabIcon {
+	float: left;
+	margin-right: 2px;
+}
+
+.jqTabNo {
+	float: left;
+}
+
+.filterName {
+	display: block;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+.filterColumn {
+	display: block;
+	padding: 5px;
+	text-align: left;
+}
+
+.filterPropertiesTable {
+	margin-top: 5px;
+}
+
+.fpNameColumn {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+}
+
+.fpValueColumn {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	width: 100px;
+}
+
+.fpButtonsColumn {
+	text-align: left;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.fpColumn {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+}
+
+.fpHeader {
+	text-align: center;
+}
+
+.testSuitePath {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 290px;
+	display: block;
+}
+
+.welcome #content .tabbed>.forms {
+	max-width: 389px;
+}
+
+.sortByNameIcon {
+	margin: 4px 10px 0 0;
+}
+
+.sortByOrgIdIcon {
+	margin-top: 4px;
+}
+
+.ToFixToReviewSeparator {
+	margin-right: 8px;
+}
+
+.treeColumn .dragElement {
+	display: inline;
+	visibility: hidden;
+	cursor: pointer;
+	float: right;
+}
+
+.treeTable tr:hover .dragElement {
+	visibility: visible;
+}
+
+tr.inplaceEdit .dragElement {
+	display: none;
+}
+
+div.dnd-progress {
+	background-color: #e4e4e4;
+	border: 1px solid #c0c0c0;
+	padding: 5px;
+}
+
+.toolbar .external input.button {
+	margin-top: 2px !important;
+}
+
+.editEntity>.activity .sec .fixedLabel .row>label {
+	width: 150px !important;
+}
+
+.editEntity>.noRightImp {
+	right: auto !important;
+	margin-top: 10px;
+}
+
+#page #status.statusDetails {
+	z-index: 100;
+}
+
+#page #status.statusDetails span {
+	height: auto !important;
+}
+
+#page #status.statusDetails .rich-message-label {
+	position: relative;
+	margin-top: -25px;
+}
+
+.row>.input>div.info {
+	max-width: 450px;
+	margin-bottom: 10px;
+}
+
+.widgetBox
+{
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+}
+
+.widgetBox .title
+{
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.widgetBox .arrow {
+	float: left;
+	position: relative;
+	width: 17px;
+	height: 44px;
+}
+
+.widgetBox .bad-up
+{
+	position: absolute;
+	bottom: 0;
+	width: 17px;
+	height: 29px;
+}
+
+.widgetBox .bad-down
+{
+	position: absolute;
+	bottom: 0;
+	width: 17px;
+	height: 29px;
+}
+
+.widgetBox .good-up
+{
+	position: absolute;
+	bottom: 0;
+	width: 17px;
+	height: 29px;
+}
+
+.widgetBox .good-down
+{
+	position: absolute;
+	bottom: 0;
+	width: 17px;
+	height: 29px;
+}
+
+.widgetBox .widgetContent .trendBox
+{
+	margin-bottom: 15px;
+	display: table;
+	margin: 0 auto;
+}
+
+.widgetBox .widgetContent .trendBox .noChange {
+	margin-top: 25px;
+	font-size: 18px;
+	float: left;
+}
+
+.widgetBox .trendDetails
+{
+	text-align: left;
+}
+
+.widgetBox .trendDetails.indent
+{
+	margin-left: 5px;
+}
+
+.widgetBox .detailsBox
+{
+	position: absolute;
+	bottom: 0;
+	margin: 5px 0 0 5px;
+}
+
+.widgetBox .trendChange 
+{
+	position: relative;
+	float: left;
+	height: 46px;
+	width: 30px;
+}
+
+.widgetBox .trendChange > span 
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.widgetBox .count
+{
+	float: left;
+    padding-right: 15px;
+}
+
+.widgetBox .count > span > a:link, 
+.widgetBox .count > span > a:visited, 
+.widgetBox .count > span > a:active, 
+.widgetBox .count > span > a:hover {
+	cursor: pointer;
+}
+
+.reportGrid>table.grid {
+	padding: 0 5px;
+	width: 95%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.reportGrid>table.grid>tbody>tr>td {
+	line-height: 1.25em;
+	text-align: center;
+}
+
+.reportGrid>table.grid>tbody>tr>td.number,
+table>tbody>tr>td.number {
+	text-align: right !important;
+	float: inherit !important;
+}
+
+.reportGrid>table.grid>tbody>tr>td.text,
+table>tbody>tr>td.text,
+table > tbody > tr > td.string {
+	text-align: left !important;
+	float: inherit !important;
+}
+
+.reportGrid>table.grid>tbody>tr>td.text {
+	max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.reportGrid > table.sparklines
+{
+	width: 95%;
+	border-collapse: collapse;
+}
+
+.reportGrid>table.sparklines td {
+	padding: 2px;
+	text-align: center;
+}
+
+ul.dtpRepParams {
+	display: block;
+	text-align: left;
+	width: 95%;
+	margin-bottom: 10px;
+	width: 900px;
+	margin-bottom: 10px;
+}
+
+div.dtpRepParamsWrapper ul.dtpRepParams {
+    width: auto;
+    margin-left: 40px;
+}
+
+ul.dtpRepParams>li {
+	display: inline;
+}
+
+ul.break>li {
+	display: block;
+}
+
+/* use presence of [data-model-id] attribute to select series in chart */
+#chart path[data-model-id]
+{
+	cursor: pointer;
+}
+
+.selectable table tbody td {
+	cursor: pointer;
+}
+
+#editor {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.moreInfo {
+	float: left;
+	width: 25px;
+	padding: 5px 0 7px 0;
+}
+
+.filterConfiguration {
+	display: block;
+	width: 100%;
+	height: 20px;
+}
+
+.filtersList {
+	margin: 10px;
+	border: 0px;
+}
+
+.filtersList .filterRow {
+	padding: 10px 15px;
+}
+
+.filtersList .filterRow .name {
+	width: 360px;
+	float:left;
+	padding-right: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.filtersList .filterRow .associatedProject {
+	float: left;
+	width: 360px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-style: italic;
+}
+
+.filtersList.filterRow .name a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 125px;
+	display: block;
+	white-space: nowrap;
+}
+
+.filtersList .filterRow:hover .delete {
+	display: block;
+}
+
+.filtersList .filterRow:hover .duplicate {
+	display: block;
+	margin-right: 15px;
+}
+
+.filtersList .filterRow .duplicate {
+	float: right;
+	display: none;
+}
+
+.filtersList .filterRow .delete {
+	float: right;
+	display: none;
+}
+
+div.row div.text {
+	float: left;
+	margin-top: 2px !important;
+	margin-bottom: 2px !important;
+	text-align: left;
+	vertical-align: middle;
+	min-height: 20px;
+	line-height: 20px;
+}
+
+div.row div.width250px {
+	width: 250px;
+	white-space: normal;
+}
+
+.fa {
+	width: 100%;
+	margin-top: 2px !important;
+	margin-bottom: 2px !important;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.fa>.faMarker {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	margin-right: 10px;
+}
+
+.fa .faMarker>img {
+	position: absolute;
+	background: transparent;
+}
+
+.violationDetails>div {
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.violationDetails .k-treeview {
+	overflow: visible;
+}
+
+.violations {
+	height: 100% !important;
+	border: 0 !important;
+	overflow: hidden;
+}
+
+.violations .bottom-pane {
+	height: 60%;
+}
+
+.violations .bottom-pane .horizontal {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.violations .bottom-pane .horizontal .editorWrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: 25px;
+}
+
+.violations .bottom-pane .horizontal .editorFileName,
+.violationDetails h2 {
+	text-align: center;
+	line-height: 25px;
+}
+
+
+
+.violations .bottom-pane .horizontal .editorFileName h2 {
+    display:inline;
+    padding-left: 5px; 
+}
+
+#clearSearch {
+	display: none;
+}
+
+
+/*a clean break from the past. please adhere to the style guidelines from now on*/
+.administrationSettings .row {
+	margin: 10px 0;
+}
+.administrationSettings .filterToggle {
+	margin-left: 150px;
+}
+
+.administrationSettings .labelContainer .labelRow {
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+.administrationSettings .labelContainer .labelRow label {
+	width: 168px;
+	font-weight: bold;
+	display: block;
+	text-align: right;
+	float: left;
+	margin: 4px 10px 0 0;
+}
+
+.administrationSettings .filterSettings {
+	margin: 20px;
+}
+
+.administrationSettings .filterSection {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+
+.administrationSettings .filterSection .filterSectionConfiguration {
+	padding: 10px 20px;
+}
+
+.administrationSettings .filterSectionConfigurationBody {
+	padding: 10px 20px;
+}
+
+.administrationConfigurationWindow .k-grid {
+	margin: 10px 2px;
+}
+
+/**timeline**/
+.timeLineBranchWrapper {
+	float: left;
+	width: 20%;
+}
+
+.timeLineWrapper {
+    width: 80%;
+    overflow-x: auto;
+}
+
+table.timeLine {
+	float: left;
+}
+
+table.timeLine.autoSize  {
+	width: auto !important;	
+}
+
+table.timeLine.overflow {
+	width: 100% !important;
+	table-layout: fixed;
+}
+
+table.timeLine.timeLineBranch {
+	width: 100% !important;
+	float: right;
+}
+
+.timeLine thead tr td {
+    text-align: center;
+    height: 20px;
+    line-height: 20px !important;
+    white-space: nowrap;
+}
+
+.timeLine.timeLineBranch tbody tr td.branch {
+    text-align: left !important;
+}
+
+.timeLine tbody tr td {
+    height: 20px;
+    line-height: 20px !important;
+    white-space: nowrap;
+}
+
+.timeLine tr td {
+    padding: 5px !important;
+}
+
+.timeLine tr td.checkbox {
+	text-align: center;
+}
+
+.timeLine tr td.checkbox input {
+    padding: 0 !important;
+}
+
+.violationsActions {
+	margin-left: 40px;
+}
+
+.violationsActions {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.violationsActions > div {
+	float: left;
+	margin-right: 5px;
+	min-height: 20px;
+	line-height: 20px;
+}
+
+.violationsActions > div > input[type="image"] {
+    height: 10px;
+    width: 12px;
+    padding: 3px 2px 3px 2px;
+    margin: 2px;
+}
+
+.violationsActions > div.clear {
+	float: none;
+	min-height: 0;
+    line-height: 0;
+}
+
+.violationHistoryActions span.k-icon {
+    margin-top: 4px;
+}
+/**timeline end**/
+
+.violations .selectable {
+	position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+div.gridNavigation {
+	float: left;
+    padding-left: 3px;
+    padding-right: 5px;
+    padding-top: 2px;
+    text-align: left;
+}
+
+.gridFrame {
+	padding:10px;
+}
+
+div .tooltip-right-10 {
+    right:10px;
+    position:absolute;
+}
+
+div #locally-modified-warning_tt_active {
+    padding-top:15px;
+    margin-left:-20px;
+    margin-top:20px;
+}
+
+div.column div.row div.applyToCrossViolInput {
+    min-width:140px;
+}
+
+#contentLoading {
+    display: block;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+img.ruleDocIcon {
+	height: 13px;
+	position: relative;
+	top: -1px;
+}
+
+.reportGrid #gridWrapper {
+	width: 900px;
+}
+
+.licLimNotification {
+	display: block;
+	position: fixed;
+	z-index: 999999;
+	left: 0;
+    right: 0;
+	bottom: 0;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 15px;
+}
+
+.licLimNotification.warning {
+	display: none;
+}
+
+.licLimNotification a {
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+img.switchToViewLink {
+	float: left;
+    padding-right: 5px;
+    padding-top: 2px;
+}

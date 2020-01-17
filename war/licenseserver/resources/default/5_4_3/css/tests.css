@@ -1,0 +1,223 @@
+html, body, div.page-main, .content-table {
+	background: white;
+}
+
+.filterLabel {
+	border: 0;
+	margin: 0;
+	line-height:25px;
+	padding-left: 10px;
+	padding-right: 0px;
+	empty-cells: show;
+	width: 100%;
+	white-space: nowrap;	
+    font-weight:bold;
+    color:#737270;
+}
+
+td.fill {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+td.base-runs {
+	width: 75px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td.base-status {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td.current-status {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td.base-duration {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td.current-duration {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+td.duration-diff {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.errorFixed {
+    font-size: 10px;
+    color: green;
+}
+
+.errorCurrent {
+    font-size: 10px;
+    color: red;
+}
+
+.errorBase {
+    font-size: 10px;
+    color: red;
+}
+
+.errorUnchanged {
+    font-size: 10px;
+    color: red;
+}
+
+td.success {
+    width: 100px;
+    text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+    background-color: #afe293;
+}
+
+td.in_progress {
+	width: 100px !important;
+}
+
+td.failure {
+    width: 100px;
+    text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+    background-color: #ffabab;
+}
+
+td.incomplete {
+    width: 100px;
+    text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	background-color: yellow;
+}
+
+td.unknown {
+    width: 100px;
+    text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+.table-header {
+	border: 1px solid silver;
+	background-color: #CECECE;
+    font-size: 10px;	
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 3px;
+}
+
+td.input
+{
+    white-space: nowrap;	
+}
+
+select.mediumInputNoMarginTxt {
+    padding-left: 4px;
+    width: 110px;
+    font-family:Arial,Verdana,Helvetica,sans-serif;
+    font-size: 8pt; 
+    font-weight:bold;
+    color:black
+}
+
+textarea.mediumInputNoMarginTxt, input.mediumInputNoMarginTxt {
+    padding-left: 4px;
+    width: 65px;
+    font-family:Arial,Verdana,Helvetica,sans-serif;
+    font-size: 8pt; 
+    font-weight:bold;
+    color:black
+}
+
+select.inputNoMarginTxt {
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+    font-size: 8pt; 
+    font-weight:bold;
+    color:black
+}
+
+a:link, a:visited, a:active {
+    color:#0c60b6;
+	text-decoration: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a:link:hover {
+	color: #DD761A;
+	font-family: Arial, Verdana, Helvetica;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a {
+	color:#909090;
+   text-decoration: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+a:hover {
+	color:#737270;
+	font-family: Arial, Verdana, Helvetica;
+	cursor: default;
+}
+
+a:visited:hover {
+	color: #DD761A;
+	font-family: Arial, Verdana, Helvetica;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,131 @@
+#menu {
+	background-image: url('/licenseserver/images/menuBck.gif'); 
+	background-repeat :	repeat-x;
+	float: left;
+	width: 100%;
+}
+
+#menu ul {
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	WIDTH: 95px;
+	list-style: none;		
+}
+
+#menu a {
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-right: 0px;	
+	display: block;	
+	width: 100%;
+	font: bold 11px arial, helvetica, sans-serif;
+	color: #000;
+	text-decoration: none;
+	white-space: nowrap;
+	text-align: center;
+	border-right: 1px solid white;	
+}
+
+#menu ul ul li a {
+	text-align: left;
+	border-right: 0;
+	width: 100%;
+	border-top: 1px solid white; 
+}
+
+#menu a:hover {
+	background: #ffad1f;
+	color: white;	
+}
+
+#menu li {
+	position: relative;	
+}
+
+#menu li.parent {
+	background-image: url('/licenseserver/images/arrow.gif');
+	background-repeat: no-repeat;
+	background-position: right;		
+}
+
+#menu ul ul {
+	z-index: 500;
+	position: absolute !important;
+	width: 180px;
+	background: #d4cfc7;
+}
+
+#menu ul ul ul {
+	left: 100%;
+	top: 0px;
+	border-left: 1px solid white;
+	
+}
+
+div#menu ul ul {
+	display: none;
+}
+
+div#menu ul li:hover ul ul {
+	display: none;
+}
+
+/*added*/
+div#menu ul li.liHover ul ul {
+	display: none;
+}
+
+div#menu ul ul li:hover ul ul {
+	display: none;
+}
+
+/*added*/
+div#menu ul ul li.liHover ul ul {
+	display: none;
+}
+
+div#menu ul li:hover ul {
+	display: block;
+}
+
+/*added*/
+div#menu ul li.liHover ul {
+	DISPLAY: block;
+}
+
+
+div#menu ul ul li:hover ul {
+	display: block;
+}
+
+/*added*/
+div#menu ul ul li.liHover ul {
+	display: block;
+}
+
+
+div#menu ul ul ul li:hover ul {
+	display: block;
+}
+
+/*added*/
+div#menu ul ul ul li.liHover ul {
+	display: block;
+}
+
+#menu ul li {
+	float: left;
+	width: 100%;
+}
+
+#menu span {
+	color: black; 
+	font-weight: bold; 
+	font-size: 11px; 
+	font-family: arial,verdana,helvetica,sans-serif;
+	margin-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;	
+	float: right;	
+}

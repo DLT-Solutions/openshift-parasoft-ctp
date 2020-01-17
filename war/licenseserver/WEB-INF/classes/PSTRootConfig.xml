@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root-config>
+    <config-version>119</config-version>
+    
+    <!-- This flag will be removed after the first DTP launch -->
+    <dtp-fresh-install>true</dtp-fresh-install>
+    
+    <!-- Specifies if DTP user login names should be treated case-sensitive
+    This affects multiple areas i.e. login procedure, Parasoft automated test results, etc. -->
+    <case-sensitive>true</case-sensitive>
+    
+    <strict-mode>false</strict-mode>
+    <cloud-version>false</cloud-version>
+    
+    <!-- This setting applies only when connecting DTP to the embedded database. -->
+    <embedded-db enabled="false"/>
+    
+    <!-- Changing db-connection parameter requires DTP and Data Collector to be restarted. -->
+    <!-- These settings apply only when connecting DTP to an external database (non-embedded DB). -->
+    <dtp-db-connection>        
+        <db-type>MySQL</db-type>
+        <user>dtp</user>
+        <password encrypted="true">56214f7e70236532</password>
+        <!-- sample Oracle connection url:   <url>jdbc:oracle:thin:@HOST:PORT:SID</url>   -->
+        <!-- sample MySQL connection url:   <url>jdbc:mysql://HOST:PORT/DATABASE</url>   -->
+        <url>jdbc:mysql://localhost:3306/DTP</url>
+    </dtp-db-connection>
+    
+	<mail-config>
+		<enabled>false</enabled>
+		<!-- Mail server -->
+		<server>localhost</server>
+		<!-- When no email is defined for a user, the email is sent to: login@default_domain -->
+		<domain/>
+		<username/>
+		<password/>
+		<!-- Value is required only for those servers that authenticate using SASL realm -->
+		<realm/>
+	</mail-config>
+	
+	<ssl-enabled>false</ssl-enabled>
+	
+	<!--   Configures which applications are visible -->
+	<!--     <visible-apps> -->
+	<!--        <report-center>true</report-center> -->
+	<!--        <team-server>true</team-server> -->
+	<!--        <license-server>true</license-server> -->
+	<!--        <user-administration>true</user-administration> -->
+	<!--     </visible-apps> -->
+	
+	<!-- Determines the default base URI used to access the server UI. -->
+	<!-- The base URI will be based upon the request URI if a valid URI value is not set. -->
+	<!-- This value will be used even in reverse proxy environments. -->
+	<!-- Note: for single sign on, use the fully qualified domain name as in example below. -->
+    <!-- <default-server-url>http://hostname.company.com:8080</default-server-url> -->
+    
+    <!-- Configure the port used for DTP's session database. The default is
+         9003.  Normally you would not need to set this port unless the
+         default is already in use on your machine. -->
+    <!-- <session-database-port>9003</session-database-port> -->
+</root-config>

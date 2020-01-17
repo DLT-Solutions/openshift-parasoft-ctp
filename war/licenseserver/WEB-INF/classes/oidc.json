@@ -1,0 +1,7 @@
+{
+    "enabled": false,
+    "issuerUri": "your issuer uri",
+    "clientId": "your client id",
+    "clientSecret": "your client secret",
+    "usernameAttribute": "your username attribute"
+}

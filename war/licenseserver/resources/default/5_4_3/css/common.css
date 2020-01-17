@@ -1,0 +1,500 @@
+/*
+ * This css define common style for Project Center and Report Center
+ *
+ */
+
+/**
+ * General styles for page layout
+ */
+html, body {   
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background: #efefef;
+}
+
+.modal-window html, body {   
+    height: auto;
+}
+
+form {
+    margin: 0px;
+    height: 100%;
+    width: auto;    
+}
+
+img {
+    border: none;
+}
+
+img.icon {
+	display:block;
+	vertical-alig:middle;
+}
+
+a {
+    color: #0c60b6 !important;	
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:ACTIVE, a:LINK, a:VISITED {
+   color: #0c60b6 !important; 	
+}
+
+a:HOVER {
+    color: orange !important;
+    text-decoration: none! important;	
+}
+
+a.paleText:ACTIVE, a.paleText:LINK, a.paleText:VISITED {
+   color: #7F7BEF;     
+}
+
+a.paleText:HOVER {
+    color: #FFCD6F;
+    text-decoration: none! important;   
+}
+
+div.page-main {
+    height: 100%;
+    /*border: 1px solid #aaaaaa;*/
+    background:  #efefef; 
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;	
+}
+
+.content-table {
+	background:  #efefef;
+}
+
+.page-content {
+    height: 100%;
+    width: 99%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.page-title {
+    padding: 2px;        
+}
+
+.page-title-img-col {
+    width: 32px;
+}
+
+.page-title-txt-col {
+    vertical-align: middle;
+}   
+
+.page-title-txt {
+    font-size: 13px;    
+    text-align: left;
+    color: black;
+    font-weight: bold;  
+}
+
+.page-footer {
+    overflow: hidden;
+    table-layout: fixed;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    width: 99%;
+}
+
+.logged-as {
+    font-weight: bold;
+    vertical-align: middle;
+    white-space: nowrap; 
+    padding-right: 10px;
+}
+
+/*
+ * Usefull styles for HTML elemets formatting
+ */
+
+.page-separator-bottom {    
+    border-bottom: 1px solid silver;    
+}
+
+.page-separator-top {   
+    border-top: 1px solid silver;   
+}
+
+.page-separator-left {      
+    border-left: 1px solid silver;  
+}
+
+.separator-no-repeat-left {
+    background-image: url('/grs/images/planning/separator.gif'); 
+    background-repeat : no-repeat;
+    background-position: left center;   
+}
+
+.space-left {
+    padding-left: 10px;     
+}
+
+.tab-space-left {
+    padding-left: 5px;     
+}
+
+.space-right {
+    padding-right: 10px;     
+}
+
+.space-large-left {
+    padding-left: 25px;     
+}
+
+.space-top {
+    padding-top: 10px;      
+}
+
+.space-bottom {
+    padding-bottom: 10px;   
+}
+
+.space-small-bottom {
+    padding-bottom: 5px;    
+}
+
+.margin-top {
+    margin-top: 10px;   
+}
+
+.margin-bottom {
+    margin-bottom: 10px;    
+}
+
+.margin-left {
+    margin-left: 10px;  
+}
+
+.margin-left-previous-line {
+    margin-left: 60px;  
+    padding-top:5px;
+}
+
+/*
+ * Styles for concret HTML elements like field set, input text etc.
+ */
+ 
+.field-set {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 1px solid silver;   
+    padding: 5px;
+}
+
+.text {
+    text-align: left;          
+    white-space: nowrap;
+}
+
+legend.label {
+	font-size: 11px;
+	font-weight: bold;
+	padding-right: 4px;
+	text-align: left;
+	color: #5E5A59;
+}
+
+label.labelTxt, td.labelTxt, span.labelTxt, a.labelTxt {
+    text-align: right;
+    font-weight: bold;     
+    padding-right: 2px;
+}
+
+label.reqLabelTxt, td.reqLabelTxt, span.reqLabelTxt, div.reqLabelTxt {
+    text-align: right;
+    font-weight: bold;       
+    padding-right: 5px;
+    white-space: nowrap;
+    background-image: url('/grs/images/planning/star.gif'); 
+    background-repeat : no-repeat;
+    background-position: right top; 
+}
+
+label.csvLabelTxt, td.csvLabelTxt, span.csvLabelTxt {
+    text-align: right;
+    font-weight: bold;        
+    padding-right: 17px;
+    white-space: nowrap;
+    background-image: url('/grs/images/planning/csv.gif'); 
+    background-repeat : no-repeat;
+    background-position: right top; 
+}
+
+textarea.inputTxt, input.inputTxt {    
+    padding-left: 4px;    
+    vertical-align: top;
+    width: 174px;
+}
+
+select.inputTxt {
+    padding-left: 4px;   
+    vertical-align: top;
+    width: 180px;
+}
+
+select.inputNoMarginTxt {   
+    vertical-align: top;
+    padding-left: 4px;
+    width: 156px;
+}
+
+select.inputNoWidthTxt {
+    padding-left: 4px;   
+    vertical-align: top;
+    margin: 3px;
+}
+
+select.inplaceInput, input.inplaceInput {
+    vertical-align: top;
+}
+
+textarea.smallInputTxt, select.smallInputTxt, input.smallInputTxt {
+    vertical-align: top;
+    padding-left: 4px;
+    width: 50px;
+}
+
+textarea.mediumInputTxt, select.mediumInputTxt, input.mediumInputTxt {
+    vertical-align: top;
+    padding-left: 4px;
+    width: 100px;
+}
+
+select.mediumInputTxt { 
+    vertical-align: top;
+    padding-left: 4px;
+    width: 106px;
+}
+
+
+textarea.mediumInputNoMarginTxt, input.mediumInputNoMarginTxt {
+    vertical-align: top;
+    padding-left: 4px;
+    width: 100px;
+}
+
+select.mediumInputNoMarginTxt { 
+    vertical-align: top;
+    padding-left: 4px;
+    width: 106px;
+}
+
+textarea.largeInputTxt, select.largeInputTxt, input.largeInputTxt { 
+    vertical-align: top;
+    padding-left: 4px;
+    width: 250px;
+}
+
+textarea.hugeInputTxt, select.hugeInputTxt, input.hugeInputTxt {  
+    vertical-align: top;
+    padding-left: 4px;
+    width: 600px;
+}
+
+textarea.xxHugeInputTxt, select.xxHugeInputTxt, input.xxHugeInputTxt {
+    vertical-align: top;
+    padding-left: 4px;
+    width: 800px;
+}
+
+.widthAuto {
+    width: auto !important;
+}
+
+input, select {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    vertical-align: middle !important;
+}
+
+/** Absolut content **/
+
+div.content {
+	overflow: auto;
+	height: auto;
+	position: absolute;
+	top: 125px; /*menu + toolbar*/
+	bottom: 20px; /*footer*/
+	left: 25px; /*left toolbox*/
+	right: 5px; 
+	margin: 0px none; 
+	padding: 0px none;
+	min-width: 960px;
+}
+
+div.content {
+    overflow: auto;
+    height: auto;
+    position: absolute;
+    top: 125px; /*menu + toolbar*/
+    bottom: 20px; /*footer*/
+    left: 25px; /*left toolbox*/
+    right: 5px; 
+    margin: 0px none; 
+    padding: 0px none;
+    min-width: 960px;
+}
+
+.modal-window div.content {
+    overflow: auto;
+    height: auto;
+    position: absolute;
+    top: 65px; /*header*/
+    bottom: 20px; /*footer*/
+    left: 5px;
+    right: 5px; 
+    margin: 0px none; 
+    padding: 0px none;
+    min-width: 0;
+}
+
+div.footer {
+	position: absolute; 
+	bottom: 2px; 
+	left: 2px; 
+	right: 0px;
+}
+
+div.toolbox {
+    /*position: absolute;*/	
+}
+
+div.column, div.col {
+	float:left;
+}
+
+div.row {
+	clear:both;
+	min-height:25px;
+	width:auto;
+}
+
+div.row div.label, div.column div.label, div.row > label, div.col > label {
+	width: 130px;
+	display:block;
+	float:left;
+	margin-top:2px;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+	padding-right:4px;
+	text-align:right;
+	vertical-align:middle;
+	white-space: normal;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+div.label > label {
+	font-weight: bold;	
+	line-height: 20px;
+}
+
+span.tooltip {
+	padding-right: 5px;
+}
+
+div.label > label.tooltip {
+    cursor: help;
+    padding-right: 12px;
+    background-image: url('/grs/images/planning/icons/qm.gif'); 
+    background-repeat : no-repeat;
+    background-position: right top;  
+}
+
+span.tooltip, div.label.tooltip, div.row > label.tooltip, div.col > label.tooltip {
+    cursor: help;
+    background-image: url('/grs/images/planning/icons/qm.gif'); 
+    background-repeat : no-repeat;
+    background-position: right top;
+}
+
+div.required, label.required {
+    background-image: url('/grs/images/planning/star.gif') !important; 
+    background-repeat : no-repeat;
+    background-position: right top; 	
+}
+
+div.input {
+	float:left;
+	margin-top:2px !important;
+	margin-bottom:2px !important;
+	text-align:left;
+	vertical-align:middle;
+	min-width: 250px;
+	min-height: 20px;
+	line-height: 20px;
+}
+
+div.input label {
+    vertical-align:middle;
+    line-height: 20px;
+    height: 20px;
+}
+
+div.input label {
+    vertical-align:middle;
+    line-height: 20px;
+    height: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.retestStatus {
+	display: block;
+	line-height: 17px;
+	height: 17px;
+	padding-left: 20px;
+	width: 200px !important;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.retestRequired {
+	margin-left: 18px;
+	color: white;
+	background: url("/grs/images/retest_required.png");
+	background-repeat:no-repeat;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.retestNotRequired {
+	margin-left: 1px;
+}
+
+.incomplete {
+	background-color: #FDF3C0;
+}
+
+.toolTipImage {
+	margin-left:5px;
+}
+
+.adminTipActiveProject {
+	margin-left: 5px;
+	margin-bottom: -3px;
+}
+
+.adminTipTeamMembers {
+	padding-right: 5px;
+}
+.adminTeamCSVLabel {
+	font-style: italic;
+}

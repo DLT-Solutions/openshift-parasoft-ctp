@@ -1,0 +1,51 @@
+/** Override border of kendo grid **/
+.contentWrapper .k-grid,
+#gridWrapper .k-grid {
+	border: 0px !important;
+	border-top: 1px;
+}
+
+.k-state-focused {
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+}
+
+.k-filter-menu {
+	height: auto;
+}
+
+.ui-progressbar {
+    position: relative;
+}
+
+.progress-label {
+    position: absolute;
+    left: 30%;    
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.ui-progressbar-value {
+    background: #ffe2bd !important;	
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;    
+}
+
+.ui-progressbar {
+	border: 1px solid #e78f08 !important;
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+
+.k-button-no-min-width .k-grid tbody .k-button {
+	min-width: none !important;
+}
+
+.k-grid tbody tr:hover {
+    background: #fff6df !important; 
+}

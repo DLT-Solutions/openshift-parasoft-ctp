@@ -1,0 +1,235 @@
+/** COMMON **/
+ul.root,
+ul.root ul {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;    
+}
+
+ul.root li {
+    text-align: left;
+    line-height: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 100;
+    vertical-align: bottom;
+}
+
+ul.root > li:first-child {
+    width:135px;
+}
+
+ul.root li div.sub {
+    float: right;
+    width: 10px; 
+    cursor: pointer; 
+}
+
+ul.root li div.img {
+    float: left;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center right; 
+}
+
+ul.root ul li.panelHolder {
+    text-align: center;
+    line-height: normal;
+    height: auto;
+    background-color: white !important;
+    width: auto;
+}
+
+ul.root li > a {
+    display:block;
+    float: left;
+    color: #193459  !important;
+    font-size: 12px !important;
+    margin-left: 5px !important;
+    font-family: Arial, sans-serif !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.root > li.active {
+    background-image: url('../images/common/bgr-on.gif');
+    background-repeat: repeat-x;
+    background-position: left;
+}
+
+ul.tabbed > li.active > div.sub div.arrow {
+    background-image: url('../images/common/arrow-on.gif');
+    background-repeat: no-repeat;
+    background-position: 57% 50%;
+}
+
+ul.tabbed > li.active > div.sub {
+    background-image: url('../images/common/separator-on.gif');
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+ul.root > li > a.url {
+    left: 0px;
+}
+
+/** /COMMON **/
+
+/** ROOT ITEMS **/
+ul.root {
+    background-color: transparent;  
+}
+
+ul.root > li {
+    line-height: 30px;
+    height: 30px;
+    margin-right: 3px;
+    width: 120px;    
+    float: left;
+    border: 1px solid #8db3d4;
+    border-bottom: 0px;
+    background-image: url('../images/common/bgr-off.gif');
+    background-repeat: repeat-x;
+    background-position: left;     
+}
+
+ul.root > li > a {
+    position:absolute;
+    left: 5px;
+    right: 10px;
+    text-align: center;
+}
+
+ul.root > li:hover {
+    background-image: url('../images/common/bgr-on.gif');
+    background-repeat: repeat-x;
+    background-position: left;
+}
+
+/** /ROOT ITEMS **/
+
+/** TABBED **/
+
+
+ul.tabbed > li > a {
+    position:absolute;
+    left: 15px;
+    right: 20px;
+}
+
+ul.tabbed > li {
+    border-bottom: 0px;    
+}
+
+ul.tabbed li div.sub {
+    width: 20px; 
+}
+
+ul.tabbed > li > div.sub {
+    background-image: url('../images/common/separator-off.gif');
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+ul.tabbed > li:hover > div.sub {
+    background-image: url('../images/common/separator-on.gif');
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+ul.tabbed > li > div.sub div.arrow {
+    background-image: url('../images/common/arrow-off.gif');
+    background-repeat: no-repeat;
+    background-position: 57% 50%;  
+}
+
+ul.tabbed > li:hover > div.sub div.arrow {
+    background-image: url('../images/common/arrow-on.gif');
+    background-repeat: no-repeat;
+    background-position: 57% 50%;
+}
+
+/** /TABBED **/
+
+/** FIRST LEVEL **/
+ul.root > li > ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    padding: 1px 0 0 0;
+    border-left: 1px solid #8db3d4;
+    border-right: 1px solid #8db3d4;
+    border-bottom: 1px solid #8db3d4;
+    background: white url("../images/common/menu-bgr-top.gif") no-repeat 120px top;
+}
+
+ul.root > li:first-child > ul {
+	background: white url("../images/common/menu-bgr-top.gif") no-repeat 135px top;
+}
+
+ul.root > li.workspace-menu-item > ul {
+    background: white url("../images/common/my-tasks-bgr-top.gif") no-repeat -420px 0px;
+}
+/** /FIRST LEVEL **/
+
+/** EVERY NEXT LEVEL **/
+
+ul.root li ul li > a {
+    position:absolute;
+    left: 20px;
+    right: 15px;
+}
+
+ul.root li ul li {
+    width: 250px;
+    background-color: white;
+}
+
+ul.root li ul li:hover {
+background: #dce8f4;
+}
+
+ul.root li ul li:hover > a {
+    /*color: white !important;*/
+    color: black !important;
+}
+
+ul.root li ul li div.sub div.arrow {
+    background-image: url('../images/common/arrow-right-off.gif');
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+ul.root li ul li:hover div.sub div.arrow {
+    background-image: url('../images/common/arrow-right-on.gif');
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+ul.root li ul li ul {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 0;
+    border: 1px solid #8db3d4;
+}
+/** /EVERY NEXT LEVEL **/
+
+li.separator,
+li.separator:hover {
+	height: 6px !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0 !important;
+}
+
+li.separator div, td.separator div {
+	height: 6px;
+	margin: 0 10px 0 10px;
+    background: url('../images/common/menu-separator.gif') repeat-x left center;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+   <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="* %d %-5p %C{1}.%M():%L%n  %m%n"/>
+      </layout>
+  </appender> 
+
+  <appender name="ls_access" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="Threshold" value="ALL"/>
+    <param name="File" value="${catalina.base}/logs/ls_access.log"/>
+    <param name="Append" value="true"/>
+    <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="ls" class="org.apache.log4j.RollingFileAppender">
+      <param name="File" value="${catalina.base}/logs/ls.log"/>
+      <param name="MaxBackupIndex" value="10"/>
+      <param name="MaximumFileSize" value="50000000"/>
+      <param name="Append" value="true"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="* %d %-5p %C{1}.%M():%L%n  %m%n"/>
+      </layout>
+  </appender>
+
+  <logger name="com.parasoft.ls.main.LicenseServerRequestLogger" additivity="false">
+      <level value="INFO"/>
+      <appender-ref ref="ls_access"/>
+  </logger>
+
+  <root>
+    <level value="INFO"/>
+    <appender-ref ref="ls"/>
+  </root>
+
+</log4j:configuration>

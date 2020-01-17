@@ -1,0 +1,210 @@
+.tipDiv {
+	position:absolute;
+	border: 1px solid #EC972D;    
+    background-color: #efefef;
+    margin: auto;
+    vertical-align: middle;
+    z-index: 100;
+    width: 500px;
+    max-width: 500px;
+}
+
+.popupDiv {
+	border: 1px solid #EC972D;    
+    background-color: #efefef;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+.tipDivHead {
+	width:100%;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #DAD5CE;
+}
+
+.tipDivTitle {
+	font-size: 10px;	
+	vertical-align: middle;
+	color: black;			
+	font-weight: bold;
+}
+
+.tipContent {
+	text-align: left;
+	width: 500px;
+	height: 300px;
+	overflow: auto;
+	padding: 10px;
+}
+
+.tipContentUL {
+	margin-top: 	0px; 
+	margin-bottom:	0px;
+	margin-left:	20px;
+	list-style-type:disc; list-style-position:outside;
+}
+
+.iconTip {
+	border: 1px solid gray;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+}
+
+.tipContentTitle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.tipContentH1 {
+    font-weight: bold;
+    margin-top:10px; 
+    margin-bottom:5px;
+}
+
+.tipParagraph {
+   margin-top: 10px; 
+   margin-bottom: 10px;
+}
+
+.tooltip-orange {
+	background: #FFC500 !important;
+	border: 1px solid #EF8700 !important;	
+	vertical-align: middle !important;
+	padding: 5px !important;
+    opacity: 0.9 !important;
+    margin-top: 5px;
+    filter:alpha(opacity=90) !important;
+    z-index: 100 !important;
+    width: 250px !important;   	
+    max-width: 250px !important;
+    white-space: normal !important;
+}
+
+.tooltip-text {
+	text-align: center !important;
+	font-weight: bold;
+	font-size: 11px;		
+	padding-right: 2px;	
+	white-space: normal !important;
+	width: 250px !important;   	
+    max-width: 250px !important;
+}
+
+.legendPopup {
+	border: solid 1px #c0c0c0;
+	background: white;
+	padding: 5px;
+	font-size: 11px;
+}
+
+.legendPopup ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.legendPopup ul li {
+	white-space: nowrap;
+	margin-bottom: 2px;
+	display: block;
+	clear: both;
+	text-align: left;
+}
+
+.legendPopup ul li div {
+	border: solid 1px #c0c0c0;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	font-size: 0;
+	float: left;
+}
+
+.legendUnderBurnDownChart {
+}
+
+.legendUnderBurnDownChart ul {
+	list-style: none;
+	padding-left: 50%;
+	margin: 0;
+}
+
+.legendUnderBurnDownChart  ul li {
+	white-space: nowrap;
+	margin-bottom: 2px;
+	display: block;
+	clear: both;
+	text-align: left;
+}
+
+.legendUnderBurnDownChart  ul li div {
+	border: solid 1px #c0c0c0;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	font-size: 0;
+	float: left;
+}
+
+.guide {
+    font-family: 'Ubuntu', 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: #c3d5e8;
+    /*width: 692px;*/
+    height: 328px;
+    padding: 60px;
+}
+
+.guide h1 {
+    font-family: 'Ubuntu', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+    color: #3e5a7c;
+}
+
+.guide h2{
+    font-family: 'Ubuntu', 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #3e5a7c;
+}
+
+.guide .txt {
+    font-family: 'Ubuntu', 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+    float: left;
+    width:250px;
+    color: #555555;
+}
+
+.guide .img {
+    margin: 40px 0 0 0 ;
+    float:right;
+}
+
+.guide .txt p {
+    line-height: 1.5em;
+    margin-bottom: 10px; 
+}
+
+#jumpStartGuideContentTable .page-content {
+    width: 100% !important;
+}
+
+.guide #readText {
+    /*font-family: 'Ubuntu', 'Trebuchet MS', Helvetica, sans-serif;*/
+    font-size: 11px;
+    float: right;
+    margin-top: 10px;
+    color: #555555;
+}
+
+.guide #readText > a {
+    text-decoration: none;
+}
+
+#jumpStartGuideHeader {
+    min-height: 14px;    
+}
